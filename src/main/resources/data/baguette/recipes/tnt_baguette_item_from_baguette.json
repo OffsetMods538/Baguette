@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " T ",
+    "TBT",
+    " T "
+  ],
+  "key": {
+    "B": {
+      "item": "baguette:baguette"
+    },
+    "T": {
+      "item": "minecraft:tnt"
+    }
+  },
+  "result": {
+    "item": "baguette:tnt_baguette",
+    "count": 1
+  }
+}
