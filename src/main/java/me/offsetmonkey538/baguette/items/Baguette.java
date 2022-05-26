@@ -1,7 +1,6 @@
 package me.offsetmonkey538.baguette.items;
 
 import net.minecraft.item.FoodComponent;
-import net.minecraft.item.FoodComponents;
 import net.minecraft.item.Item;
 
 public class Baguette extends Item {
