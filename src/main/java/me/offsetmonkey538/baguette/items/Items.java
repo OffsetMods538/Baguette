@@ -7,8 +7,10 @@ import net.minecraft.util.registry.Registry;
 
 public class Items {
     public static final Item BAGUETTE = new Baguette(new Item.Settings().group(ItemGroup.FOOD));
+    public static final Item LONG_BAGUETTE = new LongBaguette(new Item.Settings().group(ItemGroup.FOOD));
 
     public static void register() {
         Registry.register(Registry.ITEM, new Identifier("baguette", "baguette"), BAGUETTE);
+        Registry.register(Registry.ITEM, new Identifier("baguette", "long_baguette"), LONG_BAGUETTE);
     }
 }
