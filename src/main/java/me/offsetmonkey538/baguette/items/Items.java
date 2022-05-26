@@ -1,0 +1,14 @@
+package me.offsetmonkey538.baguette.items;
+
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
+
+public class Items {
+    public static final Item BAGUETTE = new Baguette(new Item.Settings().group(ItemGroup.FOOD));
+
+    public static void register() {
+        Registry.register(Registry.ITEM, new Identifier("baguette", "baguette"), BAGUETTE);
+    }
+}
