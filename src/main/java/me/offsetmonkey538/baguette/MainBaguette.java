@@ -1,5 +1,6 @@
 package me.offsetmonkey538.baguette;
 
+import me.offsetmonkey538.baguette.config.JsonConfig;
 import me.offsetmonkey538.baguette.items.Items;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
