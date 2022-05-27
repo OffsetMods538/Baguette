@@ -12,7 +12,14 @@ import java.util.Collections;
 
 public class JsonConfig {
     private static final Path CONFIG_PATH = FabricLoader.getInstance().getConfigDir().resolve("baguette.json");
-    private static BaguetteConfig config = new BaguetteConfig(6);
+    private static BaguetteConfig config = new BaguetteConfig(
+            6,
+            1200,
+            0,
+            100,
+            600,
+            0,
+            100);
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_DASHES).registerTypeAdapter(BaguetteConfig.class, new BaguetteConfigDeserializer()).create();
 
     public static void loadConfig() {

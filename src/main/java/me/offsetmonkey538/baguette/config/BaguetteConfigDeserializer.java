@@ -10,6 +10,16 @@ public class BaguetteConfigDeserializer implements JsonDeserializer<BaguetteConf
     public BaguetteConfig deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext jsonDeserializationContext) throws JsonParseException {
         JsonObject jsonObject = jsonElement.getAsJsonObject();
 
-        return new BaguetteConfig(jsonObject.get("tnt-baguette-explosion-strength").getAsInt());
+        return new BaguetteConfig(
+                jsonObject.get("tnt-baguette-explosion-strength").getAsInt(),
+
+                jsonObject.get("water-baguette-hunger-duration-ticks").getAsInt(),
+                jsonObject.get("water-baguette-hunger-amplifier").getAsInt(),
+                jsonObject.get("water-baguette-hunger-chance").getAsFloat(),
+
+                jsonObject.get("water-baguette-nausea-duration-ticks").getAsInt(),
+                jsonObject.get("water-baguette-nausea-amplifier").getAsInt(),
+                jsonObject.get("water-baguette-nausea-chance").getAsFloat()
+        );
     }
 }

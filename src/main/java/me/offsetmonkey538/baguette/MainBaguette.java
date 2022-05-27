@@ -11,8 +11,11 @@ public class MainBaguette implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        Items.register();
         JsonConfig.loadConfig();
+        LOGGER.info("Configuration file loaded!");
+        Items.register();
+        LOGGER.info("Items registered!");
+
         LOGGER.info("Baguette has been initialized!");
     }
 }

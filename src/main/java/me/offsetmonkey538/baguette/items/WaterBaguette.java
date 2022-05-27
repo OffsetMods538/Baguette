@@ -1,5 +1,6 @@
 package me.offsetmonkey538.baguette.items;
 
+import me.offsetmonkey538.baguette.config.JsonConfig;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
@@ -9,8 +10,16 @@ public class WaterBaguette extends Item {
     private static final FoodComponent FOOD_COMPONENT = new FoodComponent.Builder()
             .hunger(8)
             .saturationModifier(0.9f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 1200, 0), 100)
-            .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 600, 0), 100)
+            .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER,
+                            JsonConfig.getConfig().waterBaguetteHungerDurationTicks(),
+                            JsonConfig.getConfig().waterBaguetteHungerAmplifier()),
+                    JsonConfig.getConfig().waterBaguetteHungerChance())
+
+            .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA,
+                            JsonConfig.getConfig().waterBaguetteNauseaDurationTicks(),
+                            JsonConfig.getConfig().waterBaguetteNauseaAmplifier()),
+                    JsonConfig.getConfig().waterBaguetteNauseaChance())
+
             .build();
 
 
