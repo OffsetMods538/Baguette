@@ -9,7 +9,11 @@ import net.minecraft.world.World;
 import net.minecraft.world.explosion.Explosion;
 
 public class TntBaguette extends Item {
-    private static final FoodComponent FOOD_COMPONENT = new FoodComponent.Builder().hunger(15).saturationModifier(1.8f).alwaysEdible().build();
+    private static final FoodComponent FOOD_COMPONENT = new FoodComponent.Builder()
+            .hunger(15)
+            .saturationModifier(1.8f)
+            .alwaysEdible()
+            .build();
 
 
     public TntBaguette(Settings settings) {
