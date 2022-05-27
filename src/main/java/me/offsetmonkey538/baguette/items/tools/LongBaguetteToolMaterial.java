@@ -1,6 +1,6 @@
 package me.offsetmonkey538.baguette.items.tools;
 
-import me.offsetmonkey538.baguette.items.Items;
+import me.offsetmonkey538.baguette.items.ModItems;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
@@ -32,6 +32,6 @@ public class LongBaguetteToolMaterial implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(Items.BAGUETTE);
+        return Ingredient.ofItems(ModItems.Items.BAGUETTE.getItem());
     }
 }
