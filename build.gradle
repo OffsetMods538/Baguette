@@ -1,5 +1,11 @@
+import com.modrinth.minotaur.dependencies.ModDependency
+
+import java.nio.file.Files
+import java.nio.file.Paths
+
 plugins {
     id 'fabric-loom' version '0.12-SNAPSHOT'
+    id 'com.modrinth.minotaur' version '2.+'
     id 'maven-publish'
 }
 
@@ -61,19 +67,16 @@ jar {
     }
 }
 
-// configure the maven publication
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            from components.java
-        }
-    }
-
-    // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
-    repositories {
-        // Add repositories to publish to here.
-        // Notice: This block does NOT have the same function as the block in the top level.
-        // The repositories here will be used for publishing your artifact, not for
-        // retrieving dependencies.
-    }
+modrinth {
+    token = System.getenv('MODRINTH_TOKEN')
+    projectId = 'C62KCffR'
+    versionNumber = project.version
+    versionName = project.version
+    uploadFile = remapJar
+    gameVersions = ['1.18.2']
+    changelog = Files.readAllBytes(Paths.get(project.projectDir.toString() + "/CHANGELOG.md")).toString()
+    loaders = ['fabric']
+    dependencies = [
+            new ModDependency('P7dR8mSH', 'required') // Sets Fabric API as a required dependency
+    ]
 }
