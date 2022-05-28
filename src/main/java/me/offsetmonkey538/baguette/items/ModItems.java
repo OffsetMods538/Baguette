@@ -29,7 +29,7 @@ public class ModItems {
 
     public static void register() {
         for (Items item : Items.values()) {
-            Registry.register(Registry.ITEM, item.name, item.item);
+            Registry.register(Registry.ITEM, new Identifier("baguette", item.name), item.item);
         }
     }
 }
