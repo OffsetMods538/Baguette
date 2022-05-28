@@ -74,7 +74,7 @@ modrinth {
     versionName = project.version
     uploadFile = remapJar
     gameVersions = ['1.18.2']
-    changelog = Files.readAllBytes(Paths.get(project.projectDir.toString() + "/CHANGELOG.md")).toString()
+    changelog = Files.readString(Paths.get(project.projectDir.toString() + "/CHANGELOG.md"))
     loaders = ['fabric']
     dependencies = [
             new ModDependency('P7dR8mSH', 'required') // Sets Fabric API as a required dependency
