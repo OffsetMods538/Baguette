@@ -7,7 +7,7 @@ import net.minecraft.recipe.Ingredient;
 public class LongBaguetteToolMaterial implements ToolMaterial {
     @Override
     public int getDurability() {
-        return 60;
+        return 275;
     }
 
     @Override
@@ -17,7 +17,7 @@ public class LongBaguetteToolMaterial implements ToolMaterial {
 
     @Override
     public float getAttackDamage() {
-        return 1.5f;
+        return 0;
     }
 
     @Override
