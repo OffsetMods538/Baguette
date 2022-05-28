@@ -1,9 +1,9 @@
 package me.offsetmonkey538.baguette.items;
 
 import me.offsetmonkey538.baguette.items.tools.LongBaguetteSword;
-import me.offsetmonkey538.baguette.items.tools.LongBaguetteToolMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModItems {
@@ -12,7 +12,7 @@ public class ModItems {
         LONG_BAGUETTE(new LongBaguette(new Item.Settings().group(ItemGroup.FOOD)), "long_baguette"),
         TNT_BAGUETTE(new TntBaguette(new Item.Settings().group(ItemGroup.FOOD)), "tnt_baguette"),
         WATER_BAGUETTE(new WaterBaguette(new Item.Settings().group(ItemGroup.FOOD)), "water_baguette"),
-        LONG_BAGUETTE_SWORD(new LongBaguetteSword(new LongBaguetteToolMaterial(), 4, -2.4F, new Item.Settings().group(ItemGroup.COMBAT)), "long_baguette_sword");
+        LONG_BAGUETTE_SWORD(new LongBaguetteSword(new Item.Settings().group(ItemGroup.COMBAT)), "long_baguette_sword");
 
         private final Item item;
         private final String name;
