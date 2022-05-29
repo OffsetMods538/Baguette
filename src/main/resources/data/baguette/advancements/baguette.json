@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "baguette:baguette"
+    },
+    "title": {
+      "translate": "advancements.baguette.baguette.title"
+    },
+    "description": {
+      "translate": "advancements.baguette.baguette.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "baguette:root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "baguette:baguette"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
