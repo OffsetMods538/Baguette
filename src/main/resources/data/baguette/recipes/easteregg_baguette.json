@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " WH",
+    " BW",
+    "b  "
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:white_wool"
+    },
+    "H": {
+      "item": "minecraft:skeleton_skull"
+    },
+    "B": {
+      "item": "baguette:baguette"
+    },
+    "b": {
+      "item": "minecraft:bucket"
+    }
+  },
+  "result": {
+    "item": "baguette:easteregg_baguette",
+    "count": 1
+  }
+}
