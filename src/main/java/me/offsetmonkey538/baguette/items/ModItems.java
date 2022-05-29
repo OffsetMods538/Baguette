@@ -12,6 +12,7 @@ public class ModItems {
         BAGUETTE(new Baguette(new Item.Settings().group(ItemGroup.FOOD)), "baguette"),
         LONG_BAGUETTE(new LongBaguette(new Item.Settings().group(ItemGroup.FOOD)), "long_baguette"),
         TNT_BAGUETTE(new TntBaguette(new Item.Settings().group(ItemGroup.FOOD)), "tnt_baguette"),
+        CHARGED_TNT_BAGUETTE(new ChargedTntBaguette(new Item.Settings().group(ItemGroup.FOOD)), "charged_tnt_baguette"),
         WATER_BAGUETTE(new WaterBaguette(new Item.Settings().group(ItemGroup.FOOD)), "water_baguette"),
         LONG_BAGUETTE_SWORD(new LongBaguetteSword(new Item.Settings().group(ItemGroup.COMBAT)), "long_baguette_sword"),
         EASTEREGG_BAGUETTE(new EastereggBaguette(new Item.Settings().group(ItemGroup.FOOD)), "easteregg_baguette");
