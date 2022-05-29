@@ -1,5 +1,6 @@
 package me.offsetmonkey538.baguette.items;
 
+import me.offsetmonkey538.baguette.BaguetteMain;
 import me.offsetmonkey538.baguette.items.tools.LongBaguetteSword;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -29,7 +30,7 @@ public class ModItems {
 
     public static void register() {
         for (Items item : Items.values()) {
-            Registry.register(Registry.ITEM, new Identifier("baguette", item.name), item.item);
+            Registry.register(Registry.ITEM, new Identifier(BaguetteMain.MOD_ID, item.name), item.item);
         }
     }
 }

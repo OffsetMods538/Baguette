@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 
 public class BaguetteMain implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger("Baguette");
+    public static final String MOD_ID = "baguette";
 
     @Override
     public void onInitialize() {
