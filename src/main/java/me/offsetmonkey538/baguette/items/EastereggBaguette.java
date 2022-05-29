@@ -1,15 +1,27 @@
 package me.offsetmonkey538.baguette.items;
 
-import net.minecraft.item.FoodComponent;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.passive.SheepEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.text.LiteralText;
+import net.minecraft.util.Hand;
+import net.minecraft.util.TypedActionResult;
+import net.minecraft.world.World;
 
 public class EastereggBaguette extends Item {
-    private static final FoodComponent FOOD_COMPONENT = new FoodComponent.Builder()
-            .hunger(15)
-            .saturationModifier(1.8f)
-            .build();
 
     public EastereggBaguette(Settings settings) {
-        super(settings.food(FOOD_COMPONENT));
+        super(settings);
+    }
+
+    @Override
+    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+        SheepEntity entity = new SheepEntity(EntityType.SHEEP, world);
+        entity.setCustomName(new LiteralText("jeb_"));
+        entity.setPos(user.getX(), user.getY() + 0.5 , user.getZ());
+        world.spawnEntity(entity);
+        return TypedActionResult.pass(user.getStackInHand(hand));
     }
 }
