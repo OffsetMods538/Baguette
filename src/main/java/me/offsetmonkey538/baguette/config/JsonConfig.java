@@ -15,6 +15,7 @@ public class JsonConfig {
     private static final Path CONFIG_PATH = FabricLoader.getInstance().getConfigDir().resolve(BaguetteMain.MOD_ID + ".json");
     private static BaguetteConfig config = new BaguetteConfig(
             6,
+            12,
             1200,
             0,
             100,
