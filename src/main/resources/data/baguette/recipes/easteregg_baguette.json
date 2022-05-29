@@ -1,11 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " WH",
-    " BW",
-    "b  "
+    "WMH",
+    "WBM",
+    "bWW"
   ],
   "key": {
+    "M": {
+      "item": "minecraft:mutton"
+    },
     "W": {
       "item": "minecraft:white_wool"
     },
