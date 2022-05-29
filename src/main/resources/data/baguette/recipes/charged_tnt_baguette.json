@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CTC",
+    "TBT",
+    "CTC"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:end_crystal"
+    },
+    "T": {
+      "item": "minecraft:tnt"
+    },
+    "B": {
+      "item": "baguette:tnt_baguette"
+    }
+  },
+  "result": {
+    "item": "baguette:charged_tnt_baguette",
+    "count": 1
+  }
+}

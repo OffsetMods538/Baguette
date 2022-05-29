@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "baguette:baguette"
+    },
+    "title": {
+      "translate": "advancements.baguette.root.title"
+    },
+    "description": {
+      "translate": "advancements.baguette.root.description"
+    },
+    "background": "baguette:textures/gui/advancements/backgrounds/baguette.png",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:bread"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

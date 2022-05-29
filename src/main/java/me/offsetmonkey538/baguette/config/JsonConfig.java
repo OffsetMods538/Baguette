@@ -3,6 +3,7 @@ package me.offsetmonkey538.baguette.config;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import me.offsetmonkey538.baguette.BaguetteMain;
 import net.fabricmc.loader.api.FabricLoader;
 
 import java.io.IOException;
@@ -11,9 +12,10 @@ import java.nio.file.Path;
 import java.util.Collections;
 
 public class JsonConfig {
-    private static final Path CONFIG_PATH = FabricLoader.getInstance().getConfigDir().resolve("baguette.json");
+    private static final Path CONFIG_PATH = FabricLoader.getInstance().getConfigDir().resolve(BaguetteMain.MOD_ID + ".json");
     private static BaguetteConfig config = new BaguetteConfig(
             6,
+            12,
             1200,
             0,
             100,

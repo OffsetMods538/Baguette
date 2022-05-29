@@ -12,6 +12,7 @@ public class BaguetteConfigDeserializer implements JsonDeserializer<BaguetteConf
 
         return new BaguetteConfig(
                 jsonObject.get("tnt-baguette-explosion-strength").getAsInt(),
+                jsonObject.get("charged-tnt-baguette-explosion-strength").getAsInt(),
 
                 jsonObject.get("water-baguette-hunger-duration-ticks").getAsInt(),
                 jsonObject.get("water-baguette-hunger-amplifier").getAsInt(),

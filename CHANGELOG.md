@@ -1,2 +1,4 @@
 ## Added:
-- Baguette Sword: When a player gets hit with it, it gives said player the amount of hunger that bread gives.
+- Advancements
+- Béquette
+- Charged TNT Baguette: More explosive version of TNT Baguette, makes mobs drop their heads like a Charged Creeper.
