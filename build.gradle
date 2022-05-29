@@ -68,7 +68,7 @@ modrinth {
     versionNumber = project.version
     versionName   = project.version
     uploadFile    = remapJar
-    versionType   = 'beta'
+    versionType   = project.mod_version_type
     changelog     = rootProject.file('CHANGELOG.md').text
     dependencies {
         required.project 'P7dR8mSH'
