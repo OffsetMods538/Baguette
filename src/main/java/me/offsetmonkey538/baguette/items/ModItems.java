@@ -1,6 +1,7 @@
 package me.offsetmonkey538.baguette.items;
 
 import me.offsetmonkey538.baguette.BaguetteMain;
+import me.offsetmonkey538.baguette.items.baguettes.*;
 import me.offsetmonkey538.baguette.items.tools.LongBaguetteSword;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
