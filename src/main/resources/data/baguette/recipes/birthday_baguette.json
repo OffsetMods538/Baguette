@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MMM",
+    "SES",
+    "FBF"
+  ],
+  "key": {
+    "M": {
+      "item": "minecraft:milk_bucket"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "E": {
+      "item": "minecraft:egg"
+    },
+    "F": {
+      "item": "minecraft:firework_rocket"
+    },
+    "B": {
+      "item": "baguette:baguette"
+    }
+  },
+  "result": {
+    "item": "baguette:birthday_baguette",
+    "count": 1
+  }
+}

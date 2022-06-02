@@ -1,16 +1,15 @@
-package me.offsetmonkey538.baguette.items;
+package me.offsetmonkey538.baguette.items.baguettes;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.LiteralText;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
-public class EastereggBaguette extends Item {
+public class EastereggBaguette extends Baguette {
 
     public EastereggBaguette(Settings settings) {
         super(settings);

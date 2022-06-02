@@ -6,6 +6,7 @@
   "item.baguette.water_baguette": "Water Baguette",
   "item.baguette.long_baguette_sword": "Baguette Sword",
   "item.baguette.easteregg_baguette": "Béguette",
+  "item.baguette.birthday_baguette": "Birthday Baguette",
 
 
   "advancements.baguette.baguette.title": "Triple the bread, triple the fun",
@@ -16,6 +17,7 @@
   "advancements.baguette.tnt_baguette.title": "Real explosive diarrhea",
   "advancements.baguette.charged_tnt_baguette.title": "Real nuclear diarrhea",
   "advancements.baguette.water_baguette.title": "Disgust",
+  "advancements.baguette.birthday_baguette.title": "Happy Birthday!",
 
   "advancements.baguette.baguette.description": "Craft a baguette",
   "advancements.baguette.easteregg_baguette.description": "He_Is_The_Sheep",
@@ -24,5 +26,6 @@
   "advancements.baguette.root.description": "The high carbohydrates mod!",
   "advancements.baguette.tnt_baguette.description": "Craft a tnt baguette",
   "advancements.baguette.charged_tnt_baguette.description": "Craft a charged tnt baguette",
-  "advancements.baguette.water_baguette.description": "Craft a water baguette"
+  "advancements.baguette.water_baguette.description": "Craft a water baguette",
+  "advancements.baguette.birthday_baguette.description": "Craft a birthday baguette!"
 }

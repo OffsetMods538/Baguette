@@ -1,4 +1,4 @@
-package me.offsetmonkey538.baguette.items;
+package me.offsetmonkey538.baguette.items.baguettes;
 
 import me.offsetmonkey538.baguette.config.JsonConfig;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -6,7 +6,7 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 
-public class WaterBaguette extends Item {
+public class WaterBaguette extends Baguette {
     private static final FoodComponent FOOD_COMPONENT = new FoodComponent.Builder()
             .hunger(8)
             .saturationModifier(0.9f)

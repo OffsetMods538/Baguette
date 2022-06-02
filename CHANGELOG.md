@@ -1,4 +1,5 @@
 ## Added:
-- Advancements
-- Béquette
-- Charged TNT Baguette: More explosive version of TNT Baguette, makes mobs drop their heads like a Charged Creeper.
+- Birthday Baguette: Spawns lots of fireworks around you.
+
+## Changed:
+- Baguette Sword texture: Made it 64x64 instead of 80x80, so it behaves better with stuff.

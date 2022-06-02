@@ -32,6 +32,6 @@ public class LongBaguetteToolMaterial implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(ModItems.Items.BAGUETTE.getItem());
+        return Ingredient.ofItems(ModItems.Items.BAGUETTE.asItem());
     }
 }
