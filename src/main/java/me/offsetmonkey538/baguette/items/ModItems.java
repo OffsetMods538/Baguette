@@ -26,7 +26,7 @@ public class ModItems {
             this.name = name;
         }
 
-        public Item getItem() {
+        public Item asItem() {
             return item;
         }
     }
