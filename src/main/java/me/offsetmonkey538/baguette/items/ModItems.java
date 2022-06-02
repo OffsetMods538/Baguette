@@ -16,7 +16,8 @@ public class ModItems {
         CHARGED_TNT_BAGUETTE(new ChargedTntBaguette(new Item.Settings().group(ItemGroup.FOOD)), "charged_tnt_baguette"),
         WATER_BAGUETTE(new WaterBaguette(new Item.Settings().group(ItemGroup.FOOD)), "water_baguette"),
         LONG_BAGUETTE_SWORD(new LongBaguetteSword(new Item.Settings().group(ItemGroup.COMBAT)), "long_baguette_sword"),
-        EASTEREGG_BAGUETTE(new EastereggBaguette(new Item.Settings().group(ItemGroup.FOOD)), "easteregg_baguette");
+        EASTEREGG_BAGUETTE(new EastereggBaguette(new Item.Settings().group(ItemGroup.FOOD)), "easteregg_baguette"),
+        BIRTHDAY_BAGUETTE(new BirthdayBaguette(new Item.Settings().group(ItemGroup.FOOD)), "birthday_baguette");
 
         private final Item item;
         private final String name;
