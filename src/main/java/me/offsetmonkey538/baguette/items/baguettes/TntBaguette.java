@@ -14,7 +14,9 @@ public class TntBaguette extends Baguette {
 
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
-        world.createExplosion(user, user.getX(), user.getY(), user.getZ(), JsonConfig.getConfig().tntBaguetteExplosionStrength(), Explosion.DestructionType.BREAK);
+        if (!world.isClient)
+            world.createExplosion(user, user.getX(), user.getY(), user.getZ(), JsonConfig.getConfig().tntBaguetteExplosionStrength(), Explosion.DestructionType.BREAK);
+
         return super.finishUsing(stack, world, user);
     }
 }
