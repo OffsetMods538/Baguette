@@ -9,7 +9,7 @@ import net.minecraft.world.explosion.Explosion;
 public class TntBaguette extends Baguette {
 
     public TntBaguette(Settings settings) {
-        super(settings.food(FOOD_COMPONENT));
+        super(settings);
     }
 
     @Override

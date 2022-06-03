@@ -10,14 +10,21 @@ import net.minecraft.util.registry.Registry;
 
 public class ModItems {
     public enum Items {
-        BAGUETTE(new Baguette(new Item.Settings().group(ItemGroup.FOOD)), "baguette"),
-        LONG_BAGUETTE(new LongBaguette(new Item.Settings().group(ItemGroup.FOOD)), "long_baguette"),
-        TNT_BAGUETTE(new TntBaguette(new Item.Settings().group(ItemGroup.FOOD)), "tnt_baguette"),
-        CHARGED_TNT_BAGUETTE(new ChargedTntBaguette(new Item.Settings().group(ItemGroup.FOOD)), "charged_tnt_baguette"),
-        WATER_BAGUETTE(new WaterBaguette(new Item.Settings().group(ItemGroup.FOOD)), "water_baguette"),
+        BAGUETTE(new Baguette(new Item.Settings().group(ItemGroup.FOOD).food(ModFoodComponents.BAGUETTE)), "baguette"),
+
+        LONG_BAGUETTE(new LongBaguette(new Item.Settings().group(ItemGroup.FOOD).food(ModFoodComponents.LONG_BAGUETTE)), "long_baguette"),
+
+        TNT_BAGUETTE(new TntBaguette(new Item.Settings().group(ItemGroup.FOOD).food(ModFoodComponents.TNT_BAGUETTE)), "tnt_baguette"),
+
+        WATER_BAGUETTE(new WaterBaguette(new Item.Settings().group(ItemGroup.FOOD).food(ModFoodComponents.WATER_BAGUETTE)), "water_baguette"),
+
         LONG_BAGUETTE_SWORD(new LongBaguetteSword(new Item.Settings().group(ItemGroup.COMBAT)), "long_baguette_sword"),
+
         EASTEREGG_BAGUETTE(new EastereggBaguette(new Item.Settings().group(ItemGroup.FOOD)), "easteregg_baguette"),
-        BIRTHDAY_BAGUETTE(new BirthdayBaguette(new Item.Settings().group(ItemGroup.FOOD)), "birthday_baguette");
+
+        CHARGED_TNT_BAGUETTE(new ChargedTntBaguette(new Item.Settings().group(ItemGroup.FOOD).food(ModFoodComponents.CHARGED_TNT_BAGUETTE)), "charged_tnt_baguette"),
+
+        BIRTHDAY_BAGUETTE(new BirthdayBaguette(new Item.Settings().group(ItemGroup.FOOD).food(ModFoodComponents.BIRTHDAY_BAGUETTE)), "birthday_baguette");
 
         private final Item item;
         private final String name;
