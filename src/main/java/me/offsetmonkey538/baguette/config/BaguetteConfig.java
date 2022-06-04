@@ -12,7 +12,7 @@ public record BaguetteConfig(
         int waterBaguetteNauseaAmplifier,
         float waterBaguetteNauseaChance) {
 
-    public static final BaguetteConfig defaultConfig = new BaguetteConfig(
+    public static final BaguetteConfig DEFAULT_CONFIG = new BaguetteConfig(
             6,
             12,
             1200,

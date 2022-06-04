@@ -11,7 +11,7 @@ import net.minecraft.util.registry.Registry;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ModItems {
+public final class ModItems {
     private static final Map<String, Item> ITEMS = new HashMap<>();
 
 
@@ -25,7 +25,9 @@ public class ModItems {
     public static final Item BIRTHDAY_BAGUETTE    = addItem(new BirthdayBaguette(   new Item.Settings().group(ItemGroup.FOOD)),   "birthday_baguette");
 
 
-    private ModItems() {}
+    private ModItems() {
+
+    }
 
     private static Item addItem(Item item, String name) {
         ITEMS.put(name, item);

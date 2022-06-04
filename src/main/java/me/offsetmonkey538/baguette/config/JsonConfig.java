@@ -11,12 +11,14 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Collections;
 
-public class JsonConfig {
+public final class JsonConfig {
     private static final Path CONFIG_PATH = FabricLoader.getInstance().getConfigDir().resolve(BaguetteMain.MOD_ID + ".json");
-    private static BaguetteConfig config = BaguetteConfig.defaultConfig;
+    private static BaguetteConfig config = BaguetteConfig.DEFAULT_CONFIG;
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_DASHES).registerTypeAdapter(BaguetteConfig.class, new BaguetteConfigDeserializer()).create();
 
-    private JsonConfig() {}
+    private JsonConfig() {
+
+    }
 
     public static void loadConfig() {
         try {

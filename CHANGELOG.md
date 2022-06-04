@@ -1,3 +1,4 @@
+# Changelog
 ## Added
 - Birthday Baguette: Spawns lots of fireworks around you.
 
