@@ -4,7 +4,6 @@ import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.FireworkRocketEntity;
-import net.minecraft.item.FoodComponent;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.StringNbtReader;
@@ -15,14 +14,8 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
 public class BirthdayBaguette extends Baguette {
-
-    protected static final FoodComponent FOOD_COMPONENT = new FoodComponent.Builder()
-            .hunger(Baguette.FOOD_COMPONENT.getHunger() + 12) // Hunger of a baguette + the hunger of a cake
-            .saturationModifier(Baguette.FOOD_COMPONENT.getSaturationModifier() + 0.6f) // Saturation of a baguette + the saturation of a cake
-            .build();
-
     public BirthdayBaguette(Settings settings) {
-        super(settings.food(FOOD_COMPONENT));
+        super(settings);
     }
 
     @Override

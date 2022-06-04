@@ -9,12 +9,14 @@ import net.minecraft.world.explosion.Explosion;
 public class ChargedTntBaguette extends Baguette {
 
     public ChargedTntBaguette(Settings settings) {
-        super(settings.food(FOOD_COMPONENT));
+        super(settings);
     }
 
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
-        world.createExplosion(user, user.getX(), user.getY(), user.getZ(), JsonConfig.getConfig().chargedTntBaguetteExplosionStrength(), Explosion.DestructionType.BREAK);
+        if (!world.isClient)
+            world.createExplosion(user, user.getX(), user.getY(), user.getZ(), JsonConfig.getConfig().chargedTntBaguetteExplosionStrength(), Explosion.DestructionType.BREAK);
+
         return super.finishUsing(stack, world, user);
     }
 }
