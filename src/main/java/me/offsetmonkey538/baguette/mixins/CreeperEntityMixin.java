@@ -23,7 +23,7 @@ public class CreeperEntityMixin extends HostileEntity {
     @Inject(method = "dropEquipment", at = @At("TAIL"))
     public void dropEquipment(DamageSource source, int lootingMultiplier, boolean allowDrops, CallbackInfo ci) {
         if (source.getAttacker() instanceof PlayerEntity player) {
-            if (player.getActiveItem().getItem().equals(ModItems.Items.CHARGED_TNT_BAGUETTE.asItem())) {
+            if (player.getActiveItem().getItem().equals(ModItems.CHARGED_TNT_BAGUETTE)) {
                 this.dropItem(Items.CREEPER_HEAD);
             }
         }
