@@ -15,14 +15,14 @@ public class ModItems {
     private static final Map<String, Item> items = new HashMap<>();
 
 
-    public static final Item BAGUETTE             = addItem(new Baguette(           new Item.Settings().group(ItemGroup.FOOD)),   "baguette");
-    public static final Item LONG_BAGUETTE        = addItem(new LongBaguette(       new Item.Settings().group(ItemGroup.FOOD)),   "long_baguette");
-    public static final Item TNT_BAGUETTE         = addItem(new TntBaguette(        new Item.Settings().group(ItemGroup.FOOD)),   "tnt_baguette");
-    public static final Item CHARGED_TNT_BAGUETTE = addItem(new ChargedTntBaguette( new Item.Settings().group(ItemGroup.FOOD)),   "charged_tnt_baguette");
-    public static final Item WATER_BAGUETTE       = addItem(new WaterBaguette(      new Item.Settings().group(ItemGroup.FOOD)),   "water_baguette");
-    public static final Item LONG_BAGUETTE_SWORD  = addItem(new LongBaguetteSword(  new Item.Settings().group(ItemGroup.COMBAT)), "long_baguette_sword");
-    public static final Item EASTEREGG_BAGUETTE   = addItem(new EastereggBaguette(  new Item.Settings().group(ItemGroup.FOOD)),   "easteregg_baguette");
-    public static final Item BIRTHDAY_BAGUETTE    = addItem(new BirthdayBaguette(   new Item.Settings().group(ItemGroup.FOOD)),   "birthday_baguette");
+    public static final Item BAGUETTE             = addItem(new Baguette(           new Item.Settings().group(ItemGroup.FOOD).food(ModFoodComponents.BAGUETTE)),            "baguette");
+    public static final Item LONG_BAGUETTE        = addItem(new LongBaguette(       new Item.Settings().group(ItemGroup.FOOD).food(ModFoodComponents.LONG_BAGUETTE)),       "long_baguette");
+    public static final Item TNT_BAGUETTE         = addItem(new TntBaguette(        new Item.Settings().group(ItemGroup.FOOD).food(ModFoodComponents.TNT_BAGUETTE)),        "tnt_baguette");
+    public static final Item CHARGED_TNT_BAGUETTE = addItem(new ChargedTntBaguette( new Item.Settings().group(ItemGroup.FOOD).food(ModFoodComponents.CHARGED_TNT_BAGUETTE)),"charged_tnt_baguette");
+    public static final Item WATER_BAGUETTE       = addItem(new WaterBaguette(      new Item.Settings().group(ItemGroup.FOOD).food(ModFoodComponents.WATER_BAGUETTE)),      "water_baguette");
+    public static final Item BIRTHDAY_BAGUETTE    = addItem(new BirthdayBaguette(   new Item.Settings().group(ItemGroup.FOOD).food(ModFoodComponents.BIRTHDAY_BAGUETTE)),   "birthday_baguette");
+    public static final Item EASTEREGG_BAGUETTE   = addItem(new EastereggBaguette(  new Item.Settings().group(ItemGroup.MISC)),                                             "easteregg_baguette");
+    public static final Item LONG_BAGUETTE_SWORD  = addItem(new LongBaguetteSword(  new Item.Settings().group(ItemGroup.COMBAT)),                                           "long_baguette_sword");
 
 
     private static Item addItem(Item item, String name) {
