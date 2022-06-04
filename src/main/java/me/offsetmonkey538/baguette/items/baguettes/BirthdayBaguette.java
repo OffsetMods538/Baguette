@@ -42,13 +42,13 @@ public class BirthdayBaguette extends Baguette {
             for (int i = 0; i < 10; i++)
                 world.spawnEntity(new FireworkRocketEntity(world, position.getX(), position.getY(), position.getZ(), rocketStack));
             for (int i = 0; i < 10; i++)
-                world.spawnEntity(new FireworkRocketEntity(world, position.getX()+2, position.getY(), position.getZ(), rocketStack));
+                world.spawnEntity(new FireworkRocketEntity(world, position.getX() + 2, position.getY(), position.getZ(), rocketStack));
             for (int i = 0; i < 10; i++)
-                world.spawnEntity(new FireworkRocketEntity(world, position.getX()-2, position.getY(), position.getZ(), rocketStack));
+                world.spawnEntity(new FireworkRocketEntity(world, position.getX() - 2, position.getY(), position.getZ(), rocketStack));
             for (int i = 0; i < 10; i++)
-                world.spawnEntity(new FireworkRocketEntity(world, position.getX(), position.getY(), position.getZ()+2, rocketStack));
+                world.spawnEntity(new FireworkRocketEntity(world, position.getX(), position.getY(), position.getZ() + 2, rocketStack));
             for (int i = 0; i < 10; i++)
-                world.spawnEntity(new FireworkRocketEntity(world, position.getX(), position.getY(), position.getZ()-2, rocketStack));
+                world.spawnEntity(new FireworkRocketEntity(world, position.getX(), position.getY(), position.getZ() - 2, rocketStack));
 
 
             // "Happy Birthday name!" message

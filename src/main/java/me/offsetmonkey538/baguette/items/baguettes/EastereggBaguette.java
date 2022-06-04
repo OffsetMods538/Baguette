@@ -19,7 +19,7 @@ public class EastereggBaguette extends Baguette {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         SheepEntity entity = new SheepEntity(EntityType.SHEEP, world);
         entity.setCustomName(new LiteralText("jeb_"));
-        entity.setPos(user.getX(), user.getY() + 0.5 , user.getZ());
+        entity.setPos(user.getX(), user.getY() + 0.5, user.getZ());
         world.spawnEntity(entity);
         return TypedActionResult.pass(user.getStackInHand(hand));
     }

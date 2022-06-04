@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ModItems {
-    private static final Map<String, Item> items = new HashMap<>();
+    private static final Map<String, Item> ITEMS = new HashMap<>();
 
 
     public static final Item BAGUETTE             = addItem(new Baguette(           new Item.Settings().group(ItemGroup.FOOD)),   "baguette");
@@ -25,13 +25,15 @@ public class ModItems {
     public static final Item BIRTHDAY_BAGUETTE    = addItem(new BirthdayBaguette(   new Item.Settings().group(ItemGroup.FOOD)),   "birthday_baguette");
 
 
+    private ModItems() {}
+
     private static Item addItem(Item item, String name) {
-        items.put(name, item);
+        ITEMS.put(name, item);
         return item;
     }
 
     public static void register() {
-        for (Map.Entry<String, Item> entry : items.entrySet()) {
+        for (Map.Entry<String, Item> entry : ITEMS.entrySet()) {
             Registry.register(Registry.ITEM, new Identifier(BaguetteMain.MOD_ID, entry.getKey()), entry.getValue());
         }
     }
