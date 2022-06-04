@@ -21,7 +21,7 @@ public class ModItems {
     public static final Item CHARGED_TNT_BAGUETTE = addItem(new ChargedTntBaguette( new Item.Settings().group(ItemGroup.FOOD)),   "charged_tnt_baguette");
     public static final Item WATER_BAGUETTE       = addItem(new WaterBaguette(      new Item.Settings().group(ItemGroup.FOOD)),   "water_baguette");
     public static final Item LONG_BAGUETTE_SWORD  = addItem(new LongBaguetteSword(  new Item.Settings().group(ItemGroup.COMBAT)), "long_baguette_sword");
-    public static final Item EASTEREGG_BAGUETTE   = addItem(new EastereggBaguette(  new Item.Settings().group(ItemGroup.FOOD)),   "easteregg_baguette");
+    public static final Item EASTEREGG_BAGUETTE   = addItem(new EastereggBaguette(  new Item.Settings().group(ItemGroup.MISC)),   "easteregg_baguette");
     public static final Item BIRTHDAY_BAGUETTE    = addItem(new BirthdayBaguette(   new Item.Settings().group(ItemGroup.FOOD)),   "birthday_baguette");
 
 
