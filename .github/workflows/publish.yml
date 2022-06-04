@@ -1,8 +1,10 @@
 name: Publish to modrinth
 
 on:
+  workflow_dispatch:
   push:
     branches: [ master ]
+    
 
 jobs:
   publish:
@@ -21,7 +23,7 @@ jobs:
     - name: Make gradle wrapper executable
       run: chmod +x ./gradlew
       
-    - name: Publish to modrinth
+    - name: Build mod and publish to modrinth
       env: 
         MODRINTH_TOKEN: ${{secrets.MODRINTH_TOKEN}}
       run: ./gradlew modrinth
