@@ -7,20 +7,16 @@
 
 name: Java CI with Gradle
 
-on: [push, pull_request]
+on: 
+  pull_request:
 
 jobs:
   build:
     strategy:
       matrix:
-        java: [
-          17
-        ]
+        java: [17]
         
-        os: [
-          windows-latest,
-          ubuntu-latest
-        ]
+        os: [ubuntu-latest]
         
     runs-on: ${{ matrix.os }}
     steps:
