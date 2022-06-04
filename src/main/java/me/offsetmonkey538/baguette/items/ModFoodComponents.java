@@ -6,7 +6,7 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.FoodComponents;
 
-public class ModFoodComponents {
+public final class ModFoodComponents {
     public static final FoodComponent BAGUETTE = new FoodComponent.Builder()
             .hunger(FoodComponents.BREAD.getHunger() * 3)
             .saturationModifier(FoodComponents.BREAD.getSaturationModifier() * 3)
