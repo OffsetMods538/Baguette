@@ -14,7 +14,6 @@ public class BaguetteMain implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        // JsonConfig.loadConfig();
         try {
             YamlConfig.loadConfig();
         } catch (Exception e) {
