@@ -1,6 +1,6 @@
-package me.offsetmonkey538.baguette.items;
+package com.github.offsetmonkey538.baguette.items;
 
-import me.offsetmonkey538.baguette.config.JsonConfig;
+import com.github.offsetmonkey538.baguette.config.JsonConfig;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;

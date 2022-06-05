@@ -1,4 +1,4 @@
-package me.offsetmonkey538.baguette.config;
+package com.github.offsetmonkey538.baguette.config;
 
 import com.google.gson.*;
 

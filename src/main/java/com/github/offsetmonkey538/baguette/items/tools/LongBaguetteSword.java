@@ -1,4 +1,4 @@
-package me.offsetmonkey538.baguette.items.tools;
+package com.github.offsetmonkey538.baguette.items.tools;
 
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;

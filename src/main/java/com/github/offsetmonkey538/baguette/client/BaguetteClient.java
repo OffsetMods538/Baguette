@@ -1,4 +1,4 @@
-package me.offsetmonkey538.baguette.client;
+package com.github.offsetmonkey538.baguette.client;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;

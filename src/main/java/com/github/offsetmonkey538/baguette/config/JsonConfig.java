@@ -1,9 +1,9 @@
-package me.offsetmonkey538.baguette.config;
+package com.github.offsetmonkey538.baguette.config;
 
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import me.offsetmonkey538.baguette.BaguetteMain;
+import com.github.offsetmonkey538.baguette.BaguetteMain;
 import net.fabricmc.loader.api.FabricLoader;
 
 import java.io.IOException;

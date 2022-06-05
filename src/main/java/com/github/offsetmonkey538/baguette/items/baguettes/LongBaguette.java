@@ -1,4 +1,4 @@
-package me.offsetmonkey538.baguette.items.baguettes;
+package com.github.offsetmonkey538.baguette.items.baguettes;
 
 public class LongBaguette extends Baguette {
 

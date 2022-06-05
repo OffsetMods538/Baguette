@@ -1,6 +1,6 @@
-package me.offsetmonkey538.baguette.mixins;
+package com.github.offsetmonkey538.baguette.mixins;
 
-import me.offsetmonkey538.baguette.items.ModItems;
+import com.github.offsetmonkey538.baguette.items.ModItems;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.mob.HostileEntity;

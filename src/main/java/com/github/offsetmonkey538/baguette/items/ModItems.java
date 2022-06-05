@@ -1,8 +1,8 @@
-package me.offsetmonkey538.baguette.items;
+package com.github.offsetmonkey538.baguette.items;
 
-import me.offsetmonkey538.baguette.BaguetteMain;
-import me.offsetmonkey538.baguette.items.baguettes.*;
-import me.offsetmonkey538.baguette.items.tools.LongBaguetteSword;
+import com.github.offsetmonkey538.baguette.BaguetteMain;
+import com.github.offsetmonkey538.baguette.items.baguettes.*;
+import com.github.offsetmonkey538.baguette.items.tools.LongBaguetteSword;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
