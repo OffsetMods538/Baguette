@@ -1,4 +1,4 @@
-package com.github.offsetmonkey538.baguette.mixins;
+package com.github.offsetmonkey538.baguette.mixins.entity.mob;
 
 import com.github.offsetmonkey538.baguette.items.ModItems;
 import net.minecraft.entity.EntityType;

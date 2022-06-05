@@ -1,6 +1,6 @@
 package com.github.offsetmonkey538.baguette.items;
 
-import com.github.offsetmonkey538.baguette.config.JsonConfig;
+import com.github.offsetmonkey538.baguette.config.YamlConfig;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
@@ -23,14 +23,14 @@ public final class ModFoodComponents {
             .hunger((int) (FoodComponents.BREAD.getHunger() * 1.5f))
             .saturationModifier(FoodComponents.BREAD.getSaturationModifier() * 1.5f)
             .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER,
-                            JsonConfig.getConfig().waterBaguetteHungerDurationTicks(),
-                            JsonConfig.getConfig().waterBaguetteHungerAmplifier()),
-                    JsonConfig.getConfig().waterBaguetteHungerChance())
+                            YamlConfig.getConfig().getWaterBaguetteHungerDurationTicks(),
+                            YamlConfig.getConfig().getWaterBaguetteHungerAmplifier()),
+                    YamlConfig.getConfig().getWaterBaguetteHungerChance())
 
             .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA,
-                            JsonConfig.getConfig().waterBaguetteNauseaDurationTicks(),
-                            JsonConfig.getConfig().waterBaguetteNauseaAmplifier()),
-                    JsonConfig.getConfig().waterBaguetteNauseaChance())
+                            YamlConfig.getConfig().getWaterBaguetteNauseaDurationTicks(),
+                            YamlConfig.getConfig().getWaterBaguetteNauseaAmplifier()),
+                    YamlConfig.getConfig().getWaterBaguetteNauseaChance())
             .build();
 
     public static final FoodComponent CHARGED_TNT_BAGUETTE = BAGUETTE;

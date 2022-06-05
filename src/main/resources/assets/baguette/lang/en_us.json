@@ -27,5 +27,10 @@
   "advancements.baguette.tnt_baguette.description": "Craft a tnt baguette",
   "advancements.baguette.charged_tnt_baguette.description": "Craft a charged tnt baguette",
   "advancements.baguette.water_baguette.description": "Craft a water baguette",
-  "advancements.baguette.birthday_baguette.description": "Craft a birthday baguette!"
+  "advancements.baguette.birthday_baguette.description": "Craft a birthday baguette!",
+
+  "baguette.config.broken.title": "Config file broken!",
+  "baguette.config.broken.text":"The configuration file for the Baguette mod couldn't be loaded correctly!\n\n\nPress 'Exit game' to exit the game.\n\nPress 'Remake the config file' to delete the config file and remake it with the default values.",
+  "baguette.config.broken.button.accept": "Remake the config file",
+  "baguette.config.broken.button.decline": "Exit game"
 }

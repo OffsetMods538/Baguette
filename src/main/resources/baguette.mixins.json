@@ -4,12 +4,14 @@
   "package": "com.github.offsetmonkey538.baguette.mixins",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "CreeperEntityMixin",
-    "SkeletonEntityMixin",
-    "WitherSkeletonEntityMixin",
-    "ZombieEntityMixin"
+    "entity.mob.CreeperEntityMixin",
+    "entity.mob.SkeletonEntityMixin",
+    "entity.mob.WitherSkeletonEntityMixin",
+    "entity.mob.ZombieEntityMixin"
   ],
-  "client": [],
+  "client": [
+    "client.gui.screen.TitleScreenMixin"
+  ],
   "server": [],
   "injectors": {
     "defaultRequire": 1
