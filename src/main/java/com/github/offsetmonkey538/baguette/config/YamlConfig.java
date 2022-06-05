@@ -51,8 +51,4 @@ public final class YamlConfig {
     public static BaguetteConfig getConfig() {
         return config;
     }
-
-    public static void setConfig(BaguetteConfig config) {
-        YamlConfig.config = config;
-    }
 }

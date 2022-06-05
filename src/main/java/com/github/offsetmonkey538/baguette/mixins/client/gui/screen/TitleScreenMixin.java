@@ -27,7 +27,7 @@ public class TitleScreenMixin {
                         if (accept) {
                             BaguetteMain.LOGGER.info("Player decided to let the game and fix the config!");
 
-                            if(!YamlConfig.CONFIG_PATH.toFile().delete()) {
+                            if (!YamlConfig.CONFIG_PATH.toFile().delete()) {
                                 BaguetteMain.LOGGER.error("Failed to delete config file!");
                                 MinecraftClient.getInstance().stop();
                             }
