@@ -8,6 +8,7 @@
   "item.baguette.easteregg_baguette": "Béguette",
   "item.baguette.birthday_baguette": "Birthday Baguette",
   "item.baguette.fire_baguette": "Fire Baguette",
+  "item.baguette.air_baguette": "Air Baguette",
 
 
   "advancements.baguette.baguette.title": "Triple the bread, triple the fun",
@@ -20,6 +21,7 @@
   "advancements.baguette.water_baguette.title": "Disgust",
   "advancements.baguette.birthday_baguette.title": "Happy Birthday!",
   "advancements.baguette.fire_baguette.title": "Real spicy",
+  "advancements.baguette.air_baguette.title": "A light meal",
 
   "advancements.baguette.baguette.description": "Craft a baguette",
   "advancements.baguette.easteregg_baguette.description": "He_Is_The_Sheep",
@@ -31,6 +33,7 @@
   "advancements.baguette.water_baguette.description": "Craft a water baguette",
   "advancements.baguette.birthday_baguette.description": "Craft a birthday baguette!",
   "advancements.baguette.fire_baguette.description": "Craft a fire baguette!",
+  "advancements.baguette.air_baguette.description": "Craft an air baguette!",
 
   "baguette.config.broken.title": "Config file broken!",
   "baguette.config.broken.text":"The configuration file for the Baguette mod couldn't be loaded correctly!\n\n\nPress 'Exit game' to exit the game.\n\nPress 'Remake the config file' to delete the config file and remake it with the default values.",

@@ -54,6 +54,20 @@ public final class ModFoodComponents {
                     YamlConfig.getConfig().getFireBaguetteFireResistanceChance())
             .build();
 
+    public static final FoodComponent AIR_BAGUETTE = new FoodComponent.Builder()
+            .hunger(BAGUETTE.getHunger())
+            .saturationModifier(BAGUETTE.getSaturationModifier())
+            .statusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING,
+                            YamlConfig.getConfig().getAirBaguetteSlowFallingDurationTicks(),
+                            YamlConfig.getConfig().getAirBaguetteSlowFallingAmplifier()),
+                    YamlConfig.getConfig().getAirBaguetteSlowFallingChance())
+
+            .statusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST,
+                            YamlConfig.getConfig().getAirBaguetteJumpBoostDurationTicks(),
+                            YamlConfig.getConfig().getAirBaguetteJumpBoostAmplifier()),
+                    YamlConfig.getConfig().getAirBaguetteJumpBoostChance())
+            .build();
+
 
     private ModFoodComponents() {
 
