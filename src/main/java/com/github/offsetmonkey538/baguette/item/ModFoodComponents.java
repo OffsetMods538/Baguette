@@ -31,6 +31,11 @@ public final class ModFoodComponents {
                             YamlConfig.getConfig().getWaterBaguetteNauseaDurationTicks(),
                             YamlConfig.getConfig().getWaterBaguetteNauseaAmplifier()),
                     YamlConfig.getConfig().getWaterBaguetteNauseaChance())
+
+            .statusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING,
+                            YamlConfig.getConfig().getWaterBaguetteWaterBreathingDurationTicks(),
+                            YamlConfig.getConfig().getWaterBaguetteWaterBreathingAmplifier()),
+                    YamlConfig.getConfig().getWaterBaguetteWaterBreathingChance())
             .build();
 
     public static final FoodComponent CHARGED_TNT_BAGUETTE = BAGUETTE;

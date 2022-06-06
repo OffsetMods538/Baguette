@@ -41,7 +41,6 @@ public final class YamlConfig {
             BaguetteMain.LOGGER.info("Couldn't find config file at '" + CONFIG_PATH + "', using default values and creating config file...");
             config = new BaguetteConfig();
         }
-
         try (FileWriter writer = new FileWriter(CONFIG_PATH.toFile())) {
             yaml.dump(config, writer);
         }

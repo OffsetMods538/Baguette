@@ -3,21 +3,25 @@ package com.github.offsetmonkey538.baguette.config;
 import java.io.Serializable;
 
 public final class BaguetteConfig implements Serializable {
-    private int tntBaguetteExplosionStrength =                6;
+    private int tntBaguetteExplosionStrength =            6;
 
-    private int chargedTntBaguetteExplosionStrength =         12;
+    private int chargedTntBaguetteExplosionStrength =     12;
 
-    private int waterBaguetteHungerDurationTicks =            1200;
-    private int waterBaguetteHungerAmplifier =                0;
-    private float waterBaguetteHungerChance =                 100;
+    private int waterBaguetteHungerDurationTicks =        1200;
+    private int waterBaguetteHungerAmplifier =            0;
+    private float waterBaguetteHungerChance =             100;
 
-    private int waterBaguetteNauseaDurationTicks =            600;
-    private int waterBaguetteNauseaAmplifier =                0;
-    private float waterBaguetteNauseaChance =                 100;
+    private int waterBaguetteNauseaDurationTicks =        600;
+    private int waterBaguetteNauseaAmplifier =            0;
+    private float waterBaguetteNauseaChance =             100;
 
-    private int fireBaguetteFireResistanceDurationTicks =     3600;
-    private int fireBaguetteFireResistanceAmplifier =         0;
-    private float fireBaguetteFireResistanceChance =          100;
+    private int waterBaguetteWaterBreathingDurationTicks =        3600;
+    private int waterBaguetteWaterBreathingAmplifier =            0;
+    private float waterBaguetteWaterBreathingChance =             100;
+
+    private int fireBaguetteFireResistanceDurationTicks = 3600;
+    private int fireBaguetteFireResistanceAmplifier =     0;
+    private float fireBaguetteFireResistanceChance =      100;
 
     public BaguetteConfig() {
 
@@ -60,6 +64,15 @@ public final class BaguetteConfig implements Serializable {
     public void setFireBaguetteFireResistanceChance(float fireBaguetteFireResistanceChance) {
         this.fireBaguetteFireResistanceChance = fireBaguetteFireResistanceChance;
     }
+    public void setWaterBaguetteWaterBreathingDurationTicks(int waterBaguetteWaterBreathingDurationTicks) {
+        this.waterBaguetteWaterBreathingDurationTicks = waterBaguetteWaterBreathingDurationTicks;
+    }
+    public void setWaterBaguetteWaterBreathingAmplifier(int waterBaguetteWaterBreathingAmplifier) {
+        this.waterBaguetteWaterBreathingAmplifier = waterBaguetteWaterBreathingAmplifier;
+    }
+    public void setWaterBaguetteWaterBreathingChance(float waterBaguetteWaterBreathingChance) {
+        this.waterBaguetteWaterBreathingChance = waterBaguetteWaterBreathingChance;
+    }
 
 
     //
@@ -98,5 +111,14 @@ public final class BaguetteConfig implements Serializable {
     }
     public float getFireBaguetteFireResistanceChance() {
         return fireBaguetteFireResistanceChance;
+    }
+    public int getWaterBaguetteWaterBreathingDurationTicks() {
+        return waterBaguetteWaterBreathingDurationTicks;
+    }
+    public int getWaterBaguetteWaterBreathingAmplifier() {
+        return waterBaguetteWaterBreathingAmplifier;
+    }
+    public float getWaterBaguetteWaterBreathingChance() {
+        return waterBaguetteWaterBreathingChance;
     }
 }

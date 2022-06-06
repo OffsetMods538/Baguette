@@ -1,6 +1,6 @@
 # Changelog
 ## Added
-- Birthday Baguette: Spawns lots of fireworks around you.
+- Fire Baguette: Spawns a ring of fire around you and gives you the Fire Resistance effect.
 
 ## Changed
-- Baguette Sword texture: Made it 64x64 instead of 80x80, so it behaves better with stuff.
+- Water Baguette now gives Water Breathing effect.
