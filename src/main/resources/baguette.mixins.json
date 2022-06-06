@@ -10,7 +10,8 @@
     "entity.mob.ZombieEntityMixin"
   ],
   "client": [
-    "client.gui.screen.TitleScreenMixin"
+    "client.gui.screen.TitleScreenMixin",
+    "client.gui.screen.advancement.AdvancementWidgetMixin"
   ],
   "server": [],
   "injectors": {
