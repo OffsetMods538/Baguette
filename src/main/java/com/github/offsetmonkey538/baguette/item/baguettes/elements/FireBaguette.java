@@ -8,13 +8,13 @@ import net.minecraft.world.World;
 
 public class FireBaguette extends Baguette {
     private final int[] fireBaguetteFireOffsets = {
-                     3,-1,  3, 0,  3, 1,
-                 2,-2,                  2, 2,
-             1,-3,                           1, 3,
-             0,-3,                           0, 3,
-            -1,-3,                          -1, 3,
-                -2,-2,                 -2, 2,
-                    -3,-1, -3, 0, -3, 1,
+                     3, -1,   3, 0,   3, 1,
+                 2, -2,                  2,  2,
+             1, -3,                          1,  3,
+             0, -3,                          0,  3,
+            -1, -3,                         -1,  3,
+                -2, -2,                 -2,  2,
+                    -3, -1,  -3, 0,  -3, 1,
     };
 
     public FireBaguette(Settings settings) {
@@ -25,7 +25,7 @@ public class FireBaguette extends Baguette {
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
         for (int i = 0; i < fireBaguetteFireOffsets.length; i += 2) {
             int x = fireBaguetteFireOffsets[i];
-            int z = fireBaguetteFireOffsets[i+1];
+            int z = fireBaguetteFireOffsets[i + 1];
             world.setBlockState(user.getBlockPos().add(x, 0, z), Blocks.FIRE.getDefaultState());
         }
 

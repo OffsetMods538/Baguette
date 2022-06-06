@@ -29,7 +29,7 @@ public final class ModItems {
     public static final Item LONG_BAGUETTE_SWORD  = addItem(new LongBaguetteSword(  new Item.Settings().group(ItemGroup.COMBAT)),                                            "long_baguette_sword");
     public static final Item EASTEREGG_BAGUETTE   = addItem(new EastereggBaguette(  new Item.Settings().group(ItemGroup.MISC)),                                              "easteregg_baguette");
 
-    public static final Item FOR_All_ELEMENTAL_BAGUETTE_ADVANCEMENT = addItem(new Item(new Item.Settings()), "all_elemental_baguettes_advancement");
+    public static final Item FOR_ALL_ELEMENTAL_BAGUETTE_ADVANCEMENT = addItem(new Item(new Item.Settings()), "all_elemental_baguettes_advancement");
 
     private ModItems() {
 
