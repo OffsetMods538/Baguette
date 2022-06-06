@@ -16,7 +16,7 @@ import java.nio.file.Path;
 public final class YamlConfig {
 
     public static final Path CONFIG_PATH = FabricLoader.getInstance().getConfigDir().resolve(BaguetteMain.MOD_ID + ".yml");
-    private static BaguetteConfig config = new BaguetteConfig();
+    private static BaguetteConfig config;
 
     private YamlConfig() {
 
@@ -37,11 +37,10 @@ public final class YamlConfig {
             try (FileInputStream configStream = new FileInputStream(CONFIG_PATH.toFile())) {
                 config = yaml.load(configStream);
             }
-
-            return;
+        } else {
+            BaguetteMain.LOGGER.info("Couldn't find config file at '" + CONFIG_PATH + "', using default values and creating config file...");
+            config = new BaguetteConfig();
         }
-
-        BaguetteMain.LOGGER.info("Couldn't find config file at '" + CONFIG_PATH + "', using default values and creating config file...");
 
         try (FileWriter writer = new FileWriter(CONFIG_PATH.toFile())) {
             yaml.dump(config, writer);

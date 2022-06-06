@@ -1,4 +1,4 @@
-package com.github.offsetmonkey538.baguette.items.tools;
+package com.github.offsetmonkey538.baguette.item.tools;
 
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;

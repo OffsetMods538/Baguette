@@ -1,4 +1,4 @@
-package com.github.offsetmonkey538.baguette.items;
+package com.github.offsetmonkey538.baguette.item;
 
 import com.github.offsetmonkey538.baguette.config.YamlConfig;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -38,6 +38,15 @@ public final class ModFoodComponents {
     public static final FoodComponent BIRTHDAY_BAGUETTE = new FoodComponent.Builder()
             .hunger(BAGUETTE.getHunger() + 12) // Hunger of a baguette + the hunger of a cake
             .saturationModifier(BAGUETTE.getSaturationModifier() + 0.6f) // Saturation of a baguette + the saturation of a cake
+            .build();
+
+    public static final FoodComponent FIRE_BAGUETTE = new FoodComponent.Builder()
+            .hunger(BAGUETTE.getHunger())
+            .saturationModifier(BAGUETTE.getSaturationModifier())
+            .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE,
+                            YamlConfig.getConfig().getFireBaguetteFireResistanceDurationTicks(),
+                            YamlConfig.getConfig().getFireBaguetteFireResistanceAmplifier()),
+                    YamlConfig.getConfig().getFireBaguetteFireResistanceChance())
             .build();
 
 

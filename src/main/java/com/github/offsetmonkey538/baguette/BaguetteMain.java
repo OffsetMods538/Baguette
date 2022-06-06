@@ -1,7 +1,7 @@
 package com.github.offsetmonkey538.baguette;
 
 import com.github.offsetmonkey538.baguette.config.YamlConfig;
-import com.github.offsetmonkey538.baguette.items.ModItems;
+import com.github.offsetmonkey538.baguette.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,8 +23,10 @@ public class BaguetteMain implements ModInitializer {
             configBroken = true;
         }
         LOGGER.info("Configuration loading " + (configBroken ? "failed" : "successful") + "!");
+
         ModItems.register();
         LOGGER.info("Items registered!");
+
         LOGGER.info("Baguette has been initialized!");
     }
 
