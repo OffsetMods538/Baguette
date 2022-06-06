@@ -31,6 +31,10 @@ public final class BaguetteConfig implements Serializable {
     private int   airBaguetteJumpBoostAmplifier =            0;
     private float airBaguetteJumpBoostChance =               100;
 
+    private int   earthBaguetteHasteDurationTicks =          3600;
+    private int   earthBaguetteHasteAmplifier =              0;
+    private float earthBaguetteHasteChance =                 100;
+
     public BaguetteConfig() {
 
     }
@@ -99,6 +103,15 @@ public final class BaguetteConfig implements Serializable {
     public void setAirBaguetteJumpBoostChance(float airBaguetteJumpBoostChance) {
         this.airBaguetteJumpBoostChance = airBaguetteJumpBoostChance;
     }
+    public void setEarthBaguetteHasteDurationTicks(int earthBaguetteHasteDurationTicks) {
+        this.earthBaguetteHasteDurationTicks = earthBaguetteHasteDurationTicks;
+    }
+    public void setEarthBaguetteHasteAmplifier(int earthBaguetteHasteAmplifier) {
+        this.earthBaguetteHasteAmplifier = earthBaguetteHasteAmplifier;
+    }
+    public void setEarthBaguetteHasteChance(float earthBaguetteHasteChance) {
+        this.earthBaguetteHasteChance = earthBaguetteHasteChance;
+    }
 
     //
     // Getters
@@ -163,5 +176,14 @@ public final class BaguetteConfig implements Serializable {
     }
     public float getAirBaguetteJumpBoostChance() {
         return airBaguetteJumpBoostChance;
+    }
+    public int getEarthBaguetteHasteDurationTicks() {
+        return earthBaguetteHasteDurationTicks;
+    }
+    public int getEarthBaguetteHasteAmplifier() {
+        return earthBaguetteHasteAmplifier;
+    }
+    public float getEarthBaguetteHasteChance() {
+        return earthBaguetteHasteChance;
     }
 }

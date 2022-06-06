@@ -68,6 +68,15 @@ public final class ModFoodComponents {
                     YamlConfig.getConfig().getAirBaguetteJumpBoostChance())
             .build();
 
+    public static final FoodComponent EARTH_BAGUETTE = new FoodComponent.Builder()
+            .hunger(BAGUETTE.getHunger())
+            .saturationModifier(BAGUETTE.getSaturationModifier())
+            .statusEffect(new StatusEffectInstance(StatusEffects.HASTE,
+                            YamlConfig.getConfig().getEarthBaguetteHasteDurationTicks(),
+                            YamlConfig.getConfig().getEarthBaguetteHasteAmplifier()),
+                    YamlConfig.getConfig().getEarthBaguetteHasteChance())
+            .build();
+
 
     private ModFoodComponents() {
 
