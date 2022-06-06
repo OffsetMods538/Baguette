@@ -1,0 +1,152 @@
+{
+  "display": {
+    "icon": {
+      "item": "baguette:baguette"
+    },
+    "title": {
+      "translate": "advancements.baguette.eat_all_baguettes.title"
+    },
+    "description": {
+      "translate": "advancements.baguette.eat_all_baguettes.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "baguette:all_elemental_baguettes",
+  "criteria": {
+    "baguette": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette"
+          ]
+        }
+      }
+    },
+    "long_baguette": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:long_baguette"
+          ]
+        }
+      }
+    },
+    "tnt_baguette": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:tnt_baguette"
+          ]
+        }
+      }
+    },
+    "charged_tnt_baguette": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:charged_tnt_baguette"
+          ]
+        }
+      }
+    },
+    "water_baguette": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:water_baguette"
+          ]
+        }
+      }
+    },
+    "birthday_baguette": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:birthday_baguette"
+          ]
+        }
+      }
+    },
+    "fire_baguette": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:fire_baguette"
+          ]
+        }
+      }
+    },
+    "air_baguette": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:air_baguette"
+          ]
+        }
+      }
+    },
+    "earth_baguette": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:earth_baguette"
+          ]
+        }
+      }
+    },
+    "golden_baguette": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:golden_baguette"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "baguette"
+    ],
+    [
+      "long_baguette"
+    ],
+    [
+      "tnt_baguette"
+    ],
+    [
+      "charged_tnt_baguette"
+    ],
+    [
+      "birthday_baguette"
+    ],
+    [
+      "water_baguette"
+    ],
+    [
+      "fire_baguette"
+    ],
+    [
+      "air_baguette"
+    ],
+    [
+      "earth_baguette"
+    ],
+    [
+      "golden_baguette"
+    ]
+  ]
+}

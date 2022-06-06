@@ -2,10 +2,7 @@ package com.github.offsetmonkey538.baguette.item;
 
 import com.github.offsetmonkey538.baguette.BaguetteMain;
 import com.github.offsetmonkey538.baguette.item.baguettes.*;
-import com.github.offsetmonkey538.baguette.item.baguettes.elements.AirBaguette;
-import com.github.offsetmonkey538.baguette.item.baguettes.elements.EarthBaguette;
-import com.github.offsetmonkey538.baguette.item.baguettes.elements.FireBaguette;
-import com.github.offsetmonkey538.baguette.item.baguettes.elements.WaterBaguette;
+import com.github.offsetmonkey538.baguette.item.baguettes.elements.*;
 import com.github.offsetmonkey538.baguette.item.tools.LongBaguetteSword;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -28,6 +25,7 @@ public final class ModItems {
     public static final Item FIRE_BAGUETTE        = addItem(new FireBaguette(       new Item.Settings().group(ItemGroup.FOOD).food(ModFoodComponents.FIRE_BAGUETTE)),        "fire_baguette");
     public static final Item AIR_BAGUETTE         = addItem(new AirBaguette(        new Item.Settings().group(ItemGroup.FOOD).food(ModFoodComponents.AIR_BAGUETTE)),         "air_baguette");
     public static final Item EARTH_BAGUETTE       = addItem(new EarthBaguette(      new Item.Settings().group(ItemGroup.FOOD).food(ModFoodComponents.EARTH_BAGUETTE)),       "earth_baguette");
+    public static final Item GOLDEN_BAGUETTE      = addItem(new GoldenBaguette(     new Item.Settings().group(ItemGroup.FOOD).food(ModFoodComponents.GOLDEN_BAGUETTE)),      "golden_baguette");
     public static final Item LONG_BAGUETTE_SWORD  = addItem(new LongBaguetteSword(  new Item.Settings().group(ItemGroup.COMBAT)),                                            "long_baguette_sword");
     public static final Item EASTEREGG_BAGUETTE   = addItem(new EastereggBaguette(  new Item.Settings().group(ItemGroup.MISC)),                                              "easteregg_baguette");
 

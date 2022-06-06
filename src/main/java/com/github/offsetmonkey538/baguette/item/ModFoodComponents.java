@@ -77,6 +77,35 @@ public final class ModFoodComponents {
                     YamlConfig.getConfig().getEarthBaguetteHasteChance())
             .build();
 
+    public static final FoodComponent GOLDEN_BAGUETTE = new FoodComponent.Builder()
+            .hunger(BAGUETTE.getHunger())
+            .saturationModifier(BAGUETTE.getSaturationModifier())
+            .statusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING,
+                            YamlConfig.getConfig().getWaterBaguetteWaterBreathingDurationTicks() * 2,
+                            YamlConfig.getConfig().getWaterBaguetteWaterBreathingAmplifier() + 2),
+                    YamlConfig.getConfig().getWaterBaguetteWaterBreathingChance())
+
+            .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE,
+                            YamlConfig.getConfig().getFireBaguetteFireResistanceDurationTicks() * 2,
+                            YamlConfig.getConfig().getFireBaguetteFireResistanceAmplifier() + 2),
+                    YamlConfig.getConfig().getFireBaguetteFireResistanceChance())
+
+            .statusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING,
+                            YamlConfig.getConfig().getAirBaguetteSlowFallingDurationTicks() * 2,
+                            YamlConfig.getConfig().getAirBaguetteSlowFallingAmplifier() + 2),
+                    YamlConfig.getConfig().getAirBaguetteSlowFallingChance())
+
+            .statusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST,
+                            YamlConfig.getConfig().getAirBaguetteJumpBoostDurationTicks() * 2,
+                            YamlConfig.getConfig().getAirBaguetteJumpBoostAmplifier() + 2),
+                    YamlConfig.getConfig().getAirBaguetteJumpBoostChance())
+
+            .statusEffect(new StatusEffectInstance(StatusEffects.HASTE,
+                            YamlConfig.getConfig().getEarthBaguetteHasteDurationTicks() * 2,
+                            YamlConfig.getConfig().getEarthBaguetteHasteAmplifier() + 2),
+                    YamlConfig.getConfig().getEarthBaguetteHasteChance())
+            .build();
+
 
     private ModFoodComponents() {
 
