@@ -13,12 +13,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Path;
 
-public final class YamlConfig {
+public final class ConfigLoader {
 
     public static final Path CONFIG_PATH = FabricLoader.getInstance().getConfigDir().resolve(BaguetteMain.MOD_ID + ".yml");
     private static BaguetteConfig config;
 
-    private YamlConfig() {
+    private ConfigLoader() {
 
     }
 
@@ -48,5 +48,9 @@ public final class YamlConfig {
 
     public static BaguetteConfig getConfig() {
         return config;
+    }
+
+    public static void setConfig(BaguetteConfig config) {
+        ConfigLoader.config = config;
     }
 }
