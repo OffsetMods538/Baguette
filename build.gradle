@@ -76,6 +76,11 @@ modrinth {
     uploadFile    = remapJar
     versionType   = project.mod_version_type
     changelog     = rootProject.file('CHANGELOG.md').text
+    gameVersions  = [
+            "1.19-rc.1",
+            "1.19-rc.2",
+            "1.19"
+    ]
     dependencies {
         required.project 'P7dR8mSH'
     }
