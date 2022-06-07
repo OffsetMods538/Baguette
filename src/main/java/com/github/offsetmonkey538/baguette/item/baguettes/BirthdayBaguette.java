@@ -9,7 +9,7 @@ import net.minecraft.item.Items;
 import net.minecraft.nbt.StringNbtReader;
 import net.minecraft.network.packet.s2c.play.TitleS2CPacket;
 import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.text.LiteralText;
+import net.minecraft.text.TranslatableText;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
@@ -52,7 +52,7 @@ public class BirthdayBaguette extends Baguette {
 
 
             // "Happy Birthday name!" message
-            LiteralText message = new LiteralText("Happy Birthday " + player.getName().getString() + "!");
+            TranslatableText message = new TranslatableText("item.baguette.birthday_baguette.happy_birthday", player.getName());
 
             if (player instanceof ServerPlayerEntity serverPlayer)
                 serverPlayer.networkHandler.sendPacket(new TitleS2CPacket(message));

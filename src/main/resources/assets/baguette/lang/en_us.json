@@ -13,6 +13,8 @@
   "item.baguette.all_elemental_baguettes_advancement": "Item used for the 'Finally, I have them all' advancement icon. Has no other use",
   "item.baguette.golden_baguette": "Golden Baguette",
 
+  "item.baguette.birthday_baguette.happy_birthday": "Happy Birthday %s!",
+
   "advancements.baguette.baguette.title": "Triple the bread, triple the fun",
   "advancements.baguette.easteregg_baguette.title": "He_Is_The_Sheep",
   "advancements.baguette.long_baguette.title": "Triple the baguette, triple the stomach aches",
