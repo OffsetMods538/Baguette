@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DDD",
+    "DBD",
+    "DDD"
+  ],
+  "key": {
+    "D": {
+      "tag": "minecraft:dirt"
+    },
+    "B": {
+      "item": "baguette:baguette"
+    }
+  },
+  "result": {
+    "item": "baguette:earth_baguette",
+    "count": 1
+  }
+}

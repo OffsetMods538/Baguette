@@ -1,15 +1,18 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "me.offsetmonkey538.baguette.mixins",
+  "package": "com.github.offsetmonkey538.baguette.mixins",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "CreeperEntityMixin",
-    "SkeletonEntityMixin",
-    "WitherSkeletonEntityMixin",
-    "ZombieEntityMixin"
+    "entity.mob.CreeperEntityMixin",
+    "entity.mob.SkeletonEntityMixin",
+    "entity.mob.WitherSkeletonEntityMixin",
+    "entity.mob.ZombieEntityMixin"
   ],
-  "client": [],
+  "client": [
+    "client.gui.screen.TitleScreenMixin",
+    "client.gui.screen.advancement.AdvancementWidgetMixin"
+  ],
   "server": [],
   "injectors": {
     "defaultRequire": 1

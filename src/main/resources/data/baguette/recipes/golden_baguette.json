@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " W ",
+    "FGA",
+    " E "
+  ],
+  "key": {
+    "W": {
+      "item": "baguette:water_baguette"
+    },
+    "F": {
+      "item": "baguette:fire_baguette"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "A": {
+      "item": "baguette:air_baguette"
+    },
+    "E": {
+      "item": "baguette:earth_baguette"
+    }
+  },
+  "result": {
+    "item": "baguette:golden_baguette",
+    "count": 1
+  }
+}
