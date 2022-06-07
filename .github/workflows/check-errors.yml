@@ -13,8 +13,10 @@ jobs:
           fetch-depth: 0
       
       - name: Check for errors
-        uses: github/super-linter@v3.17.0
+        uses: github/super-linter@v4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          VALIDATE_ALL_CODEBASE: false
+          FILTER_REGEX_INCLUDE: .*src/.*
+          VALIDATE_ALL_CODEBASE: true
+          VALIDATE_GOOGLE_JAVA_FORMAT: false
   

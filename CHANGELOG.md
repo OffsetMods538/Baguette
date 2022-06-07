@@ -1,5 +1,10 @@
-## Added:
-- Birthday Baguette: Spawns lots of fireworks around you.
+# Changelog
+## Added
+- Fire Baguette: Spawns a ring of fire around you and gives you the Fire Resistance effect.
+- Air Baguette: Gives you the Slow Falling effect and the Jump Boost effect.
+- Earth Baguette: Gives you the Haste effect.
+- Golden Baguette: Gives you all the positive effects of the Water,Fire,Air,Earth Baguettes (level +2, duration *2).
 
-## Changed:
-- Baguette Sword texture: Made it 64x64 instead of 80x80, so it behaves better with stuff.
+## Changed
+- Water Baguette now gives Water Breathing effect.
+- Minecraft 1.19
