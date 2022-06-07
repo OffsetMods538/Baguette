@@ -22,5 +22,6 @@ public class EastereggBaguette extends Baguette {
         sheepEntity.setPos(user.getX(), user.getY() + 0.5, user.getZ());
         world.spawnEntity(sheepEntity);
         return super.use(world, user, hand);
+        // return TypedActionResult.pass(user.getStackInHand(hand));
     }
 }
