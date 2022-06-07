@@ -7,3 +7,4 @@
 
 ## Changed
 - Water Baguette now gives Water Breathing effect.
+- Minecraft 1.19
