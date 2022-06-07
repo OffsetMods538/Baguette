@@ -1,20 +1,20 @@
 {
   "display": {
     "icon": {
-      "item": "baguette:water_baguette"
+      "item": "baguette:golden_baguette"
     },
     "title": {
-      "translate": "advancements.baguette.water_baguette.title"
+      "translate": "advancements.baguette.golden_baguette.title"
     },
     "description": {
-      "translate": "advancements.baguette.water_baguette.description"
+      "translate": "advancements.baguette.golden_baguette.description"
     },
-    "frame": "task",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "baguette:baguette",
+  "parent": "baguette:all_elemental_baguettes",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",
@@ -22,7 +22,7 @@
         "items": [
           {
             "items": [
-              "baguette:water_baguette"
+              "baguette:golden_baguette"
             ]
           }
         ]
