@@ -4,17 +4,17 @@
       "item": "baguette:golden_baguette"
     },
     "title": {
-      "translate": "advancements.baguette.golden_baguette.title"
+      "translate": "advancements.baguette.craft_golden_baguette.title"
     },
     "description": {
-      "translate": "advancements.baguette.golden_baguette.description"
+      "translate": "advancements.baguette.craft_golden_baguette.description"
     },
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "baguette:all_elemental_baguettes",
+  "parent": "baguette:craft_all_elemental_baguettes",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",

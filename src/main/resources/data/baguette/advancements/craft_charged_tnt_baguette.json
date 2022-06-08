@@ -4,17 +4,17 @@
       "item": "baguette:charged_tnt_baguette"
     },
     "title": {
-      "translate": "advancements.baguette.charged_tnt_baguette.title"
+      "translate": "advancements.baguette.craft_charged_tnt_baguette.title"
     },
     "description": {
-      "translate": "advancements.baguette.charged_tnt_baguette.description"
+      "translate": "advancements.baguette.craft_charged_tnt_baguette.description"
     },
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "baguette:tnt_baguette",
+  "parent": "baguette:craft_tnt_baguette",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",
