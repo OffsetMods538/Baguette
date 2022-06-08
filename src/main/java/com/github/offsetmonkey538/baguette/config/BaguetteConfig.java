@@ -35,7 +35,7 @@ public final class BaguetteConfig implements Serializable {
     private int   earthBaguetteHasteAmplifier =              0;
     private float earthBaguetteHasteChance =                 100;
 
-    private int   goldenBaguetteGlowingDurationTicks =       3600;
+    private int   goldenBaguetteGlowingDurationTicks =       7200;
     private int   goldenBaguetteGlowingAmplifier =           0;
     private float goldenBaguetteGlowingChance =              100;
 
