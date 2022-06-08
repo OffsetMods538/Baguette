@@ -115,6 +115,16 @@
           ]
         }
       }
+    },
+    "death_baguette": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:death_baguette"
+          ]
+        }
+      }
     }
   },
   "requirements": [
@@ -147,6 +157,9 @@
     ],
     [
       "golden_baguette"
+    ],
+    [
+      "death_baguette"
     ]
   ]
 }

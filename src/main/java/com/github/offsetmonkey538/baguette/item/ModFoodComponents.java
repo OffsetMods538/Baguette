@@ -111,6 +111,11 @@ public final class ModFoodComponents {
                     ConfigLoader.getConfig().getGoldenBaguetteGlowingChance())
             .build();
 
+    public static FoodComponent DEATH_BAGUETTE = new FoodComponent.Builder()
+            .hunger(BAGUETTE.getHunger())
+            .saturationModifier(BAGUETTE.getSaturationModifier())
+            .build();
+
 
     private ModFoodComponents() {
 

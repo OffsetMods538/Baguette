@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LPL",
+    "PBP",
+    "LPL"
+  ],
+  "key": {
+    "L": {
+      "item": "minecraft:lily_of_the_valley"
+    },
+    "P": {
+      "item": "minecraft:poisonous_potato"
+    },
+    "B": {
+      "item": "baguette:baguette"
+    }
+  },
+  "result": {
+    "item": "baguette:death_baguette",
+    "count": 1
+  }
+}
