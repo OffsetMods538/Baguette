@@ -35,6 +35,10 @@ public final class BaguetteConfig implements Serializable {
     private int   earthBaguetteHasteAmplifier =              0;
     private float earthBaguetteHasteChance =                 100;
 
+    private int   goldenBaguetteGlowingDurationTicks =       3600;
+    private int   goldenBaguetteGlowingAmplifier =           0;
+    private float goldenBaguetteGlowingChance =              100;
+
     public BaguetteConfig() {
 
     }
@@ -112,7 +116,15 @@ public final class BaguetteConfig implements Serializable {
     public void setEarthBaguetteHasteChance(float earthBaguetteHasteChance) {
         this.earthBaguetteHasteChance = earthBaguetteHasteChance;
     }
-
+    public void setGoldenBaguetteGlowingDurationTicks(int goldenBaguetteGlowingDurationTicks) {
+        this.goldenBaguetteGlowingDurationTicks = goldenBaguetteGlowingDurationTicks;
+    }
+    public void setGoldenBaguetteGlowingAmplifier(int goldenBaguetteGlowingAmplifier) {
+        this.goldenBaguetteGlowingAmplifier = goldenBaguetteGlowingAmplifier;
+    }
+    public void setGoldenBaguetteGlowingChance(float goldenBaguetteGlowingChance) {
+        this.goldenBaguetteGlowingChance = goldenBaguetteGlowingChance;
+    }
     //
     // Getters
     //
@@ -185,5 +197,14 @@ public final class BaguetteConfig implements Serializable {
     }
     public float getEarthBaguetteHasteChance() {
         return earthBaguetteHasteChance;
+    }
+    public int getGoldenBaguetteGlowingDurationTicks() {
+        return goldenBaguetteGlowingDurationTicks;
+    }
+    public int getGoldenBaguetteGlowingAmplifier() {
+        return goldenBaguetteGlowingAmplifier;
+    }
+    public float getGoldenBaguetteGlowingChance() {
+        return goldenBaguetteGlowingChance;
     }
 }

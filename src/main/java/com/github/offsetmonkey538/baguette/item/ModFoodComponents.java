@@ -104,6 +104,11 @@ public final class ModFoodComponents {
                             ConfigLoader.getConfig().getEarthBaguetteHasteDurationTicks() * 2,
                             ConfigLoader.getConfig().getEarthBaguetteHasteAmplifier() + 2),
                     ConfigLoader.getConfig().getEarthBaguetteHasteChance())
+
+            .statusEffect(new StatusEffectInstance(StatusEffects.GLOWING,
+                            ConfigLoader.getConfig().getGoldenBaguetteGlowingDurationTicks(),
+                            ConfigLoader.getConfig().getGoldenBaguetteGlowingAmplifier()),
+                    ConfigLoader.getConfig().getGoldenBaguetteGlowingChance())
             .build();
 
 
