@@ -2,7 +2,7 @@ package com.github.offsetmonkey538.baguette.config;
 
 import java.io.Serializable;
 
-public final class BaguetteConfig implements Serializable {
+public final class Config implements Serializable {
     private int   tntBaguetteExplosionStrength =             6;
 
     private int   chargedTntBaguetteExplosionStrength =      12;
@@ -39,7 +39,8 @@ public final class BaguetteConfig implements Serializable {
     private int   frogBaguetteJumpBoostAmplifier =           0;
     private float frogBaguetteJumpBoostChance =              100;
 
-    public BaguetteConfig() {
+
+    public Config() {
 
     }
 

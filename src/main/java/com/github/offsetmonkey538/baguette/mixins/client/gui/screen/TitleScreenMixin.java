@@ -12,7 +12,6 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import java.io.IOException;
 import java.util.Objects;
 
 import static com.github.offsetmonkey538.baguette.BaguetteMain.LOGGER;
@@ -29,16 +28,14 @@ public class TitleScreenMixin {
                         if (accept) {
                             LOGGER.info("Player decided to let the game fix the config!");
 
-                            if (!ConfigLoader.CONFIG_PATH.toFile().delete()) {
+                            if (!BaguetteMain.CONFIG_PATH.toFile().delete()) {
                                 LOGGER.error("Failed to delete config file!");
                                 MinecraftClient.getInstance().stop();
                             }
 
-                            try {
-                                ConfigLoader.loadConfig();
-                            } catch (IOException e) {
-                                throw new RuntimeException("Couldn't load config!", e);
-                            }
+
+                            ConfigLoader.loadConfig();
+
 
                             BaguetteMain.setConfigBroken(false);
                             Objects.requireNonNull(MinecraftClient.getInstance().currentScreen).close();

@@ -1,6 +1,6 @@
 package com.github.offsetmonkey538.baguette.config;
 
-import net.fabricmc.loader.api.FabricLoader;
+import com.github.offsetmonkey538.baguette.BaguetteMain;
 import org.yaml.snakeyaml.DumperOptions;
 import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.constructor.Constructor;
@@ -10,49 +10,50 @@ import org.yaml.snakeyaml.representer.Representer;
 import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Path;
 
+import static com.github.offsetmonkey538.baguette.BaguetteMain.CONFIG_PATH;
 import static com.github.offsetmonkey538.baguette.BaguetteMain.LOGGER;
-import static com.github.offsetmonkey538.baguette.BaguetteMain.MOD_ID;
 
 public final class ConfigLoader {
-
-    public static final Path CONFIG_PATH = FabricLoader.getInstance().getConfigDir().resolve(MOD_ID + ".yml");
-    private static BaguetteConfig config;
 
     private ConfigLoader() {
 
     }
 
-    public static void loadConfig() throws IOException, ConstructorException {
-        final DumperOptions options = new DumperOptions();
+    public static Config loadConfig() {
+        Config config;
 
-        options.setDefaultFlowStyle(DumperOptions.FlowStyle.BLOCK);
-        options.setPrettyFlow(true);
+        try {
+            final DumperOptions options = new DumperOptions();
 
-        final Yaml yaml = new Yaml(new Constructor(BaguetteConfig.class), new Representer(), options);
+            options.setDefaultFlowStyle(DumperOptions.FlowStyle.BLOCK);
+            options.setPrettyFlow(true);
 
+            final Yaml yaml = new Yaml(new Constructor(Config.class), new Representer(), options);
 
-        if (CONFIG_PATH.toFile().exists()) {
-            LOGGER.info("Found config file at '" + CONFIG_PATH + "', loading from file...");
+            if (CONFIG_PATH.toFile().exists()) {
+                LOGGER.info("Found config file at '" + CONFIG_PATH + "', loading from file...");
 
-            try (FileInputStream configStream = new FileInputStream(CONFIG_PATH.toFile())) {
-                config = yaml.load(configStream);
+                try (FileInputStream configStream = new FileInputStream(CONFIG_PATH.toFile())) {
+                    config = yaml.load(configStream);
+                }
+            } else {
+                LOGGER.info("Couldn't find config file at '" + CONFIG_PATH + "', using default values and creating config file...");
+                config = new Config();
             }
-        } else {
-            LOGGER.info("Couldn't find config file at '" + CONFIG_PATH + "', using default values and creating config file...");
-            config = new BaguetteConfig();
-        }
-        try (FileWriter writer = new FileWriter(CONFIG_PATH.toFile())) {
-            yaml.dump(config, writer);
-        }
-    }
 
-    public static BaguetteConfig getConfig() {
+            try (FileWriter writer = new FileWriter(CONFIG_PATH.toFile())) {
+                yaml.dump(config, writer);
+            }
+
+        } catch (IOException | ConstructorException e) {
+            LOGGER.warn("Failed to load config! There's probably something wrong in the config file. Using default values and asking player what they want to do...");
+            LOGGER.debug("", e);
+
+            config = new Config();
+            BaguetteMain.setConfigBroken(true);
+        }
+
         return config;
-    }
-
-    public static void setConfig(BaguetteConfig config) {
-        ConfigLoader.config = config;
     }
 }
