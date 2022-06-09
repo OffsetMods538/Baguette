@@ -7,6 +7,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.world.World;
 
+import static com.github.offsetmonkey538.baguette.BaguetteMain.getConfig;
+
 public class FrogBaguette extends Baguette {
 
     public FrogBaguette(Settings settings) {
@@ -15,10 +17,12 @@ public class FrogBaguette extends Baguette {
 
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
-        FrogEntity frogEntity = new FrogEntity(EntityType.FROG, world);
-        frogEntity.setCustomName(Text.of("WiredWierd"));
-        frogEntity.setPos(user.getX(), user.getY() + 0.5, user.getZ());
-        world.spawnEntity(frogEntity);
+        for (int i = 0; i < getConfig().getFrogBaguetteNumberOfFrogsToSpawn(); i++) {
+            FrogEntity frogEntity = new FrogEntity(EntityType.FROG, world);
+            frogEntity.setCustomName(Text.of("WiredWierd"));
+            frogEntity.setPos(user.getX(), user.getY() + 0.5, user.getZ());
+            world.spawnEntity(frogEntity);
+        }
 
         return super.finishUsing(stack, world, user);
     }

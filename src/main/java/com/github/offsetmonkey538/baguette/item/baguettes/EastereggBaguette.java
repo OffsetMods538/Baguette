@@ -7,6 +7,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.world.World;
 
+import static com.github.offsetmonkey538.baguette.BaguetteMain.getConfig;
+
 public class EastereggBaguette extends Baguette {
 
     public EastereggBaguette(Settings settings) {
@@ -15,7 +17,7 @@ public class EastereggBaguette extends Baguette {
 
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < getConfig().getEastereggBaguetteNumberOfSheepToSpawn(); i++) {
             SheepEntity sheepEntity = new SheepEntity(EntityType.SHEEP, world);
             sheepEntity.setCustomName(Text.of("jeb_"));
             sheepEntity.setPos(user.getX(), user.getY() + 0.5, user.getZ());

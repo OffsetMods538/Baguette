@@ -36,8 +36,12 @@ public final class Config implements Serializable {
     private float goldenBaguetteGlowingChance =              100;
 
     private int   frogBaguetteJumpBoostDurationTicks =       3600;
-    private int   frogBaguetteJumpBoostAmplifier =           0;
+    private int   frogBaguetteJumpBoostAmplifier =           7;
     private float frogBaguetteJumpBoostChance =              100;
+
+    private int   frogBaguetteNumberOfFrogsToSpawn =         1;
+
+    private int   eastereggBaguetteNumberOfSheepToSpawn =    20;
 
 
     public Config() {
@@ -99,15 +103,6 @@ public final class Config implements Serializable {
     public void setAirBaguetteSlowFallingChance(float airBaguetteSlowFallingChance) {
         this.airBaguetteSlowFallingChance = airBaguetteSlowFallingChance;
     }
-    public void setFrogBaguetteJumpBoostDurationTicks(int frogBaguetteJumpBoostDurationTicks) {
-        this.frogBaguetteJumpBoostDurationTicks = frogBaguetteJumpBoostDurationTicks;
-    }
-    public void setFrogBaguetteJumpBoostAmplifier(int frogBaguetteJumpBoostAmplifier) {
-        this.frogBaguetteJumpBoostAmplifier = frogBaguetteJumpBoostAmplifier;
-    }
-    public void setFrogBaguetteJumpBoostChance(float frogBaguetteJumpBoostChance) {
-        this.frogBaguetteJumpBoostChance = frogBaguetteJumpBoostChance;
-    }
     public void setEarthBaguetteHasteDurationTicks(int earthBaguetteHasteDurationTicks) {
         this.earthBaguetteHasteDurationTicks = earthBaguetteHasteDurationTicks;
     }
@@ -126,6 +121,22 @@ public final class Config implements Serializable {
     public void setGoldenBaguetteGlowingChance(float goldenBaguetteGlowingChance) {
         this.goldenBaguetteGlowingChance = goldenBaguetteGlowingChance;
     }
+    public void setFrogBaguetteJumpBoostDurationTicks(int frogBaguetteJumpBoostDurationTicks) {
+        this.frogBaguetteJumpBoostDurationTicks = frogBaguetteJumpBoostDurationTicks;
+    }
+    public void setFrogBaguetteJumpBoostAmplifier(int frogBaguetteJumpBoostAmplifier) {
+        this.frogBaguetteJumpBoostAmplifier = frogBaguetteJumpBoostAmplifier;
+    }
+    public void setFrogBaguetteJumpBoostChance(float frogBaguetteJumpBoostChance) {
+        this.frogBaguetteJumpBoostChance = frogBaguetteJumpBoostChance;
+    }
+    public void setFrogBaguetteNumberOfFrogsToSpawn(int frogBaguetteNumberOfFrogsToSpawn) {
+        this.frogBaguetteNumberOfFrogsToSpawn = frogBaguetteNumberOfFrogsToSpawn;
+    }
+    public void setEastereggBaguetteNumberOfSheepToSpawn(int eastereggBaguetteNumberOfSheepToSpawn) {
+        this.eastereggBaguetteNumberOfSheepToSpawn = eastereggBaguetteNumberOfSheepToSpawn;
+    }
+
     //
     // Getters
     //
@@ -181,15 +192,6 @@ public final class Config implements Serializable {
     public float getAirBaguetteSlowFallingChance() {
         return airBaguetteSlowFallingChance;
     }
-    public int getFrogBaguetteJumpBoostDurationTicks() {
-        return frogBaguetteJumpBoostDurationTicks;
-    }
-    public int getFrogBaguetteJumpBoostAmplifier() {
-        return frogBaguetteJumpBoostAmplifier;
-    }
-    public float getFrogBaguetteJumpBoostChance() {
-        return frogBaguetteJumpBoostChance;
-    }
     public int getEarthBaguetteHasteDurationTicks() {
         return earthBaguetteHasteDurationTicks;
     }
@@ -207,5 +209,20 @@ public final class Config implements Serializable {
     }
     public float getGoldenBaguetteGlowingChance() {
         return goldenBaguetteGlowingChance;
+    }
+    public int getFrogBaguetteJumpBoostDurationTicks() {
+        return frogBaguetteJumpBoostDurationTicks;
+    }
+    public int getFrogBaguetteJumpBoostAmplifier() {
+        return frogBaguetteJumpBoostAmplifier;
+    }
+    public float getFrogBaguetteJumpBoostChance() {
+        return frogBaguetteJumpBoostChance;
+    }
+    public int getFrogBaguetteNumberOfFrogsToSpawn() {
+        return frogBaguetteNumberOfFrogsToSpawn;
+    }
+    public int getEastereggBaguetteNumberOfSheepToSpawn() {
+        return eastereggBaguetteNumberOfSheepToSpawn;
     }
 }
