@@ -13,6 +13,7 @@
   "item.baguette.all_elemental_baguettes_advancement": "Item used for the 'Finally, I have them all' advancement icon. Has no other use",
   "item.baguette.golden_baguette": "Golden Baguette",
   "item.baguette.death_baguette": "Death Baguette",
+  "item.baguette.frog_baguette": "Frog Baguette",
 
   "item.baguette.birthday_baguette.happy_birthday": "Happy Birthday %s!",
 
@@ -35,6 +36,7 @@
   "advancements.baguette.eat_all_baguettes.title": "Avatar, the last Baguette bender",
   "advancements.baguette.craft_death_baguette.title" : "So you have chosen death",
   "advancements.baguette.eat_death_baguette.title" : "What did you expect?",
+  "advancements.baguette.craft_frog_baguette.title" : "Wired Weird",
 
   "advancements.baguette.craft_baguette.description": "Craft a baguette",
   "advancements.baguette.craft_easteregg_baguette.description": "He_Is_The_Sheep",
@@ -53,10 +55,10 @@
   "advancements.baguette.eat_all_baguettes.description": "A true master of everything baguette",
   "advancements.baguette.craft_death_baguette.description" : "Craft Death Baguette",
   "advancements.baguette.eat_death_baguette.description" : "Eat a Death Baguette",
+  "advancements.baguette.craft_frog_baguette.description" : "Craft a Frog Baguette",
 
   "baguette.config.broken.title": "Config file broken!",
   "baguette.config.broken.text":"The configuration file for the Baguette mod couldn't be loaded correctly!\n\n\nPress 'Quit game' to quit the game.\n\nPress 'Remake the config file' to delete the config file and remake it with the default values.",
   "baguette.config.broken.button.accept": "Remake the config file",
   "baguette.config.broken.button.decline": "Quit game"
-
 }

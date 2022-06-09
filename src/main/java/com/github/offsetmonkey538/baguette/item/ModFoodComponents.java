@@ -38,6 +38,8 @@ public final class ModFoodComponents {
                     ConfigLoader.getConfig().getWaterBaguetteWaterBreathingChance())
             .build();
 
+    public static final FoodComponent EASTEREGG_BAGUETTE = BAGUETTE;
+
     public static final FoodComponent CHARGED_TNT_BAGUETTE = BAGUETTE;
 
     public static final FoodComponent BIRTHDAY_BAGUETTE = new FoodComponent.Builder()
@@ -61,11 +63,6 @@ public final class ModFoodComponents {
                             ConfigLoader.getConfig().getAirBaguetteSlowFallingDurationTicks(),
                             ConfigLoader.getConfig().getAirBaguetteSlowFallingAmplifier()),
                     ConfigLoader.getConfig().getAirBaguetteSlowFallingChance())
-
-            .statusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST,
-                            ConfigLoader.getConfig().getAirBaguetteJumpBoostDurationTicks(),
-                            ConfigLoader.getConfig().getAirBaguetteJumpBoostAmplifier()),
-                    ConfigLoader.getConfig().getAirBaguetteJumpBoostChance())
             .build();
 
     public static final FoodComponent EARTH_BAGUETTE = new FoodComponent.Builder()
@@ -95,11 +92,6 @@ public final class ModFoodComponents {
                             ConfigLoader.getConfig().getAirBaguetteSlowFallingAmplifier() + 2),
                     ConfigLoader.getConfig().getAirBaguetteSlowFallingChance())
 
-            .statusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST,
-                            ConfigLoader.getConfig().getAirBaguetteJumpBoostDurationTicks() * 2,
-                            ConfigLoader.getConfig().getAirBaguetteJumpBoostAmplifier() + 2),
-                    ConfigLoader.getConfig().getAirBaguetteJumpBoostChance())
-
             .statusEffect(new StatusEffectInstance(StatusEffects.HASTE,
                             ConfigLoader.getConfig().getEarthBaguetteHasteDurationTicks() * 2,
                             ConfigLoader.getConfig().getEarthBaguetteHasteAmplifier() + 2),
@@ -114,6 +106,15 @@ public final class ModFoodComponents {
     public static final FoodComponent DEATH_BAGUETTE = new FoodComponent.Builder()
             .hunger(BAGUETTE.getHunger())
             .saturationModifier(BAGUETTE.getSaturationModifier())
+            .build();
+
+    public static final FoodComponent FROG_BAGUETTE = new FoodComponent.Builder()
+            .hunger(BAGUETTE.getHunger())
+            .saturationModifier(BAGUETTE.getSaturationModifier())
+            .statusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST,
+                            ConfigLoader.getConfig().getFrogBaguetteJumpBoostDurationTicks(),
+                            ConfigLoader.getConfig().getFrogBaguetteJumpBoostAmplifier()),
+                    ConfigLoader.getConfig().getFrogBaguetteJumpBoostChance())
             .build();
 
 
