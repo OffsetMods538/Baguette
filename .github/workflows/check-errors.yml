@@ -1,7 +1,8 @@
 name: Check for errors
 
 on:
-  push:
+  # super-linter doesn't work with multiple commits in a push but it does work in a pull request
+  pull_request:
 
 jobs:
   build:
