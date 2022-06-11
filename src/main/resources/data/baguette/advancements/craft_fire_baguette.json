@@ -1,20 +1,20 @@
 {
   "display": {
     "icon": {
-      "item": "baguette:easteregg_baguette"
+      "item": "baguette:fire_baguette"
     },
     "title": {
-      "translate": "advancements.baguette.easteregg_baguette.title"
+      "translate": "advancements.baguette.craft_fire_baguette.title"
     },
     "description": {
-      "translate": "advancements.baguette.easteregg_baguette.description"
+      "translate": "advancements.baguette.craft_fire_baguette.description"
     },
-    "frame": "challenge",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": true
+    "hidden": false
   },
-  "parent": "baguette:baguette",
+  "parent": "baguette:craft_water_baguette",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",
@@ -22,7 +22,7 @@
         "items": [
           {
             "items": [
-              "baguette:easteregg_baguette"
+              "baguette:fire_baguette"
             ]
           }
         ]

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FFF",
+    "FBF",
+    "FFF"
+  ],
+  "key": {
+    "F": {
+      "tag": "baguette:froglights"
+    },
+    "B": {
+      "item": "baguette:baguette"
+    }
+  },
+  "result": {
+    "item": "baguette:frog_baguette",
+    "count": 1
+  }
+}

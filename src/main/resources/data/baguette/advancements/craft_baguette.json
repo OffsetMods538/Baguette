@@ -1,20 +1,20 @@
 {
   "display": {
     "icon": {
-      "item": "baguette:birthday_baguette"
+      "item": "baguette:baguette"
     },
     "title": {
-      "translate": "advancements.baguette.birthday_baguette.title"
+      "translate": "advancements.baguette.craft_baguette.title"
     },
     "description": {
-      "translate": "advancements.baguette.birthday_baguette.description"
+      "translate": "advancements.baguette.craft_baguette.description"
     },
-    "frame": "goal",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "baguette:baguette",
+  "parent": "baguette:root",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",
@@ -22,7 +22,7 @@
         "items": [
           {
             "items": [
-              "baguette:birthday_baguette"
+              "baguette:baguette"
             ]
           }
         ]

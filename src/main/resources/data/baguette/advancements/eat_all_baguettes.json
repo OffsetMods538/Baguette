@@ -14,7 +14,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "baguette:all_elemental_baguettes",
+  "parent": "baguette:craft_all_elemental_baguettes",
   "criteria": {
     "baguette": {
       "trigger": "minecraft:consume_item",
@@ -115,6 +115,16 @@
           ]
         }
       }
+    },
+    "death_baguette": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:death_baguette"
+          ]
+        }
+      }
     }
   },
   "requirements": [
@@ -147,6 +157,9 @@
     ],
     [
       "golden_baguette"
+    ],
+    [
+      "death_baguette"
     ]
   ]
 }

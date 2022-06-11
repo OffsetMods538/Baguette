@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "baguette:death_baguette"
+    },
+    "title": {
+      "translate": "advancements.baguette.eat_death_baguette.title"
+    },
+    "description": {
+      "translate": "advancements.baguette.eat_death_baguette.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "baguette:craft_death_baguette",
+  "criteria": {
+    "death_baguette": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:death_baguette"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "death_baguette"
+    ]
+  ]
+}
