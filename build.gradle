@@ -78,8 +78,6 @@ modrinth {
     changelog     = rootProject.file('CHANGELOG.md').text
     syncBodyFrom  = rootProject.file('README.md').text
     gameVersions  = [
-            "1.19-rc.1",
-            "1.19-rc.2",
             "1.19"
     ]
     dependencies {
