@@ -4,6 +4,7 @@
 - [GitHub](https://github.com/OffsetMonkey538/Baguette)
 - [Very incomplete wiki](https://github.com/OffsetMonkey538/Baguette/wiki)
 - [Modrinth](https://modrinth.com/mod/baguette)
+- [Discord](https://discord.gg/gyzk6JCVaN)
 
 ## Current features
 - Baguette: Gives 3 times more hunger than bread.
