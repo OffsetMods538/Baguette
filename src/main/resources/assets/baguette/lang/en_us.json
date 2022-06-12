@@ -57,6 +57,8 @@
   "advancements.baguette.eat_death_baguette.description" : "Eat a Death Baguette",
   "advancements.baguette.craft_frog_baguette.description" : "Craft a Frog Baguette",
 
+  "effect.baguette.rename_me": "Need a name for this",
+
   "baguette.config.broken.title": "Config file broken!",
   "baguette.config.broken.text":"The configuration file for the Baguette mod couldn't be loaded correctly!\n\n\nPress 'Quit game' to quit the game.\n\nPress 'Remake the config file' to delete the config file and remake it with the default values.",
   "baguette.config.broken.button.accept": "Remake the config file",

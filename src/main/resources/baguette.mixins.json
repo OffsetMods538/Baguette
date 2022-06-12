@@ -7,13 +7,16 @@
     "entity.mob.CreeperEntityMixin",
     "entity.mob.SkeletonEntityMixin",
     "entity.mob.WitherSkeletonEntityMixin",
-    "entity.mob.ZombieEntityMixin"
+    "entity.mob.ZombieEntityMixin",
+    "world.event.listener.VibrationListenerCallbackMixin"
   ],
   "client": [
     "client.gui.screen.TitleScreenMixin",
     "client.gui.screen.advancement.AdvancementWidgetMixin"
   ],
-  "server": [],
+  "server": [
+
+  ],
   "injectors": {
     "defaultRequire": 1
   }

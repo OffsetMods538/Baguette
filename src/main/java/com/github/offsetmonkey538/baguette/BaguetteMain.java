@@ -2,6 +2,7 @@ package com.github.offsetmonkey538.baguette;
 
 import com.github.offsetmonkey538.baguette.config.Config;
 import com.github.offsetmonkey538.baguette.config.ConfigLoader;
+import com.github.offsetmonkey538.baguette.effect.ModStatusEffects;
 import com.github.offsetmonkey538.baguette.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
@@ -29,6 +30,9 @@ public class BaguetteMain implements ModInitializer, PreLaunchEntrypoint {
     public void onInitialize() {
         ModItems.register();
         LOGGER.info("Items registered!");
+
+        ModStatusEffects.register();
+        LOGGER.info("Status effects registered!");
 
         LOGGER.info("Baguette has been initialized!");
     }
