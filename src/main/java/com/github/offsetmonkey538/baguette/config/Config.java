@@ -39,6 +39,10 @@ public final class Config implements Serializable {
     private int   frogBaguetteJumpBoostAmplifier =           7;
     private float frogBaguetteJumpBoostChance =              100;
 
+    private int   sculkBaguetteSilencedDurationTicks =       1200;
+    private int   sculkBaguetteSilencedAmplifier =           0;
+    private float sculkBaguetteSilencedChance =              100;
+
     private int   frogBaguetteNumberOfFrogsToSpawn =         1;
 
     private int   eastereggBaguetteNumberOfSheepToSpawn =    20;
@@ -130,6 +134,15 @@ public final class Config implements Serializable {
     public void setFrogBaguetteJumpBoostChance(float frogBaguetteJumpBoostChance) {
         this.frogBaguetteJumpBoostChance = frogBaguetteJumpBoostChance;
     }
+    public void setSculkBaguetteSilencedDurationTicks(int sculkBaguetteSilencedDurationTicks) {
+        this.sculkBaguetteSilencedDurationTicks = sculkBaguetteSilencedDurationTicks;
+    }
+    public void setSculkBaguetteSilencedAmplifier(int sculkBaguetteSilencedAmplifier) {
+        this.sculkBaguetteSilencedAmplifier = sculkBaguetteSilencedAmplifier;
+    }
+    public void setSculkBaguetteSilencedChance(float sculkBaguetteSilencedChance) {
+        this.sculkBaguetteSilencedChance = sculkBaguetteSilencedChance;
+    }
     public void setFrogBaguetteNumberOfFrogsToSpawn(int frogBaguetteNumberOfFrogsToSpawn) {
         this.frogBaguetteNumberOfFrogsToSpawn = frogBaguetteNumberOfFrogsToSpawn;
     }
@@ -218,6 +231,15 @@ public final class Config implements Serializable {
     }
     public float getFrogBaguetteJumpBoostChance() {
         return frogBaguetteJumpBoostChance;
+    }
+    public int getSculkBaguetteSilencedDurationTicks() {
+        return sculkBaguetteSilencedDurationTicks;
+    }
+    public int getSculkBaguetteSilencedAmplifier() {
+        return sculkBaguetteSilencedAmplifier;
+    }
+    public float getSculkBaguetteSilencedChance() {
+        return sculkBaguetteSilencedChance;
     }
     public int getFrogBaguetteNumberOfFrogsToSpawn() {
         return frogBaguetteNumberOfFrogsToSpawn;
