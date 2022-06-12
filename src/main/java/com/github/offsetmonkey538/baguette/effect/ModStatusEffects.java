@@ -11,6 +11,10 @@ public class ModStatusEffects {
 
     public static final StatusEffect SILENCED = register(new ModStatusEffect(StatusEffectCategory.BENEFICIAL, 2696993), "silenced");
 
+    private ModStatusEffects() {
+
+    }
+
     @SuppressWarnings("SameParameterValue")
     private static StatusEffect register(StatusEffect effect, String id) {
         return Registry.register(Registry.STATUS_EFFECT, new Identifier(MOD_ID, id), effect);
