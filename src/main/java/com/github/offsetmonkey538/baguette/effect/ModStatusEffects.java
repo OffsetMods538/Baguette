@@ -7,7 +7,7 @@ import net.minecraft.util.registry.Registry;
 
 import static com.github.offsetmonkey538.baguette.BaguetteMain.MOD_ID;
 
-public class ModStatusEffects {
+public final class ModStatusEffects {
 
     public static final StatusEffect SILENCED = register(new ModStatusEffect(StatusEffectCategory.BENEFICIAL, 2696993), "silenced");
 
