@@ -68,6 +68,7 @@ jar {
     }
 }
 
+tasks.modrinth.dependsOn(tasks.modrinthSyncBody)
 modrinth {
     token         = System.getenv('MODRINTH_TOKEN')
     projectId     = 'C62KCffR'
