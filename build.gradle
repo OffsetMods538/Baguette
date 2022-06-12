@@ -73,7 +73,7 @@ modrinth {
     token         = System.getenv('MODRINTH_TOKEN')
     projectId     = 'C62KCffR'
     versionNumber = project.version
-    versionName   = project.version + "+" + project.minecraft_version
+    versionName   = project.version
     uploadFile    = remapJar
     versionType   = project.mod_version_type
     changelog     = rootProject.file('CHANGELOG.md').text
