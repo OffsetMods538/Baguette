@@ -128,6 +128,11 @@ public final class ModFoodComponents {
                     getConfig().getSculkBaguetteSilencedChance())
             .build();
 
+    public static final FoodComponent END_BAGUETTE = new FoodComponent.Builder()
+            .hunger(BAGUETTE.getHunger())
+            .saturationModifier(BAGUETTE.getSaturationModifier())
+            .build();
+
 
     private ModFoodComponents() {
 

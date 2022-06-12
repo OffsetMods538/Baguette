@@ -8,9 +8,10 @@ import net.minecraft.util.registry.Registry;
 import static com.github.offsetmonkey538.baguette.BaguetteMain.MOD_ID;
 
 public class ModStatusEffects {
-    
+
     public static final StatusEffect SILENCED = register(new ModStatusEffect(StatusEffectCategory.BENEFICIAL, 2696993), "silenced");
 
+    @SuppressWarnings("SameParameterValue")
     private static StatusEffect register(StatusEffect effect, String id) {
         return Registry.register(Registry.STATUS_EFFECT, new Identifier(MOD_ID, id), effect);
     }

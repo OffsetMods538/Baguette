@@ -155,6 +155,16 @@
           ]
         }
       }
+    },
+    "end_baguette": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:end_baguette"
+          ]
+        }
+      }
     }
   },
   "requirements": [
@@ -199,6 +209,9 @@
     ],
     [
       "sculk_baguette"
+    ],
+    [
+      "end_baguette"
     ]
   ]
 }

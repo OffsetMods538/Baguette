@@ -27,6 +27,7 @@ public final class ModItems {
     public static final Item DEATH_BAGUETTE       = register(new DeathBaguette(      new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.DEATH_BAGUETTE)),       "death_baguette");
     public static final Item FROG_BAGUETTE        = register(new FrogBaguette(       new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.FROG_BAGUETTE)),        "frog_baguette");
     public static final Item SCULK_BAGUETTE       = register(new SculkBaguette(      new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.SCULK_BAGUETTE)),       "sculk_baguette");
+    public static final Item END_BAGUETTE         = register(new EndBaguette(        new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.END_BAGUETTE)),         "end_baguette");
     public static final Item LONG_BAGUETTE_SWORD  = register(new LongBaguetteSword(  new FabricItemSettings().group(ItemGroup.COMBAT)),                                            "long_baguette_sword");
 
     public static final Item FOR_ALL_ELEMENTAL_BAGUETTE_ADVANCEMENT = register(new Item(new FabricItemSettings()), "all_elemental_baguettes_advancement");

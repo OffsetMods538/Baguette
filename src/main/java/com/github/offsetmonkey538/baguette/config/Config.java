@@ -47,6 +47,8 @@ public final class Config implements Serializable {
 
     private int   eastereggBaguetteNumberOfSheepToSpawn =    20;
 
+    private int   endBaguetteTeleportDistance =              10;
+
 
     public Config() {
 
@@ -149,6 +151,10 @@ public final class Config implements Serializable {
     public void setEastereggBaguetteNumberOfSheepToSpawn(int eastereggBaguetteNumberOfSheepToSpawn) {
         this.eastereggBaguetteNumberOfSheepToSpawn = eastereggBaguetteNumberOfSheepToSpawn;
     }
+    public void setEndBaguetteTeleportDistance(int endBaguetteTeleportDistance) {
+        this.endBaguetteTeleportDistance = endBaguetteTeleportDistance;
+    }
+
 
     //
     // Getters
@@ -246,5 +252,8 @@ public final class Config implements Serializable {
     }
     public int getEastereggBaguetteNumberOfSheepToSpawn() {
         return eastereggBaguetteNumberOfSheepToSpawn;
+    }
+    public int getEndBaguetteTeleportDistance() {
+        return endBaguetteTeleportDistance;
     }
 }

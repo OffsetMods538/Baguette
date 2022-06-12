@@ -15,6 +15,7 @@
   "item.baguette.death_baguette": "Death Baguette",
   "item.baguette.frog_baguette": "Frog Baguette",
   "item.baguette.sculk_baguette": "Sculk Baguette",
+  "item.baguette.end_baguette": "End Baguette",
 
 
   "item.baguette.birthday_baguette.happy_birthday": "Happy Birthday %s!",
@@ -40,6 +41,7 @@
   "advancements.baguette.eat_death_baguette.title" : "What did you expect?",
   "advancements.baguette.craft_frog_baguette.title" : "Wired Weird",
   "advancements.baguette.craft_sculk_baguette.title" : "Wardens' favorite meal",
+  "advancements.baguette.craft_end_baguette.title" : "The future is now, old chorus",
 
   "advancements.baguette.craft_baguette.description": "Craft a baguette",
   "advancements.baguette.craft_easteregg_baguette.description": "He_Is_The_Sheep",
@@ -60,6 +62,7 @@
   "advancements.baguette.eat_death_baguette.description" : "Eat a Death Baguette",
   "advancements.baguette.craft_frog_baguette.description" : "Craft a Frog Baguette",
   "advancements.baguette.craft_sculk_baguette.description" : "Craft a Sculk Baguette",
+  "advancements.baguette.craft_end_baguette.description" : "Craft an End Baguette",
 
   "effect.baguette.silenced": "Silenced",
 
