@@ -1,6 +1,7 @@
 package com.github.offsetmonkey538.baguette.item;
 
 import com.github.offsetmonkey538.baguette.BaguetteMain;
+import com.github.offsetmonkey538.baguette.effect.ModStatusEffects;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
@@ -115,6 +116,15 @@ public final class ModFoodComponents {
                             BaguetteMain.getConfig().getFrogBaguetteJumpBoostDurationTicks(),
                             BaguetteMain.getConfig().getFrogBaguetteJumpBoostAmplifier()),
                     BaguetteMain.getConfig().getFrogBaguetteJumpBoostChance())
+            .build();
+
+    public static final FoodComponent SCULK_BAGUETTE = new FoodComponent.Builder()
+            .hunger(BAGUETTE.getHunger())
+            .saturationModifier(BAGUETTE.getSaturationModifier())
+            .statusEffect(new StatusEffectInstance(ModStatusEffects.SILENCED,
+                            1200,
+                            0),
+                    100)
             .build();
 
 

@@ -17,7 +17,7 @@ public interface VibrationListenerCallbackMixin {
     default void canAccept(GameEvent gameEvent, GameEvent.Emitter emitter, CallbackInfoReturnable<Boolean> cir) {
         Entity entity = emitter.sourceEntity();
         if (entity instanceof LivingEntity livingEntity) {
-            if (livingEntity.getActiveStatusEffects().containsKey(ModStatusEffects.RENAME_ME))
+            if (livingEntity.getActiveStatusEffects().containsKey(ModStatusEffects.SILENCED))
                 cir.setReturnValue(false);
         }
     }

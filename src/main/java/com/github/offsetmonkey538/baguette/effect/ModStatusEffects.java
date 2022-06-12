@@ -8,9 +8,8 @@ import net.minecraft.util.registry.Registry;
 import static com.github.offsetmonkey538.baguette.BaguetteMain.MOD_ID;
 
 public class ModStatusEffects {
-
-    // TODO: Rename me
-    public static final StatusEffect RENAME_ME = register(new ModStatusEffect(StatusEffectCategory.BENEFICIAL, 2696993), "rename_me");
+    
+    public static final StatusEffect SILENCED = register(new ModStatusEffect(StatusEffectCategory.BENEFICIAL, 2696993), "silenced");
 
     private static StatusEffect register(StatusEffect effect, String id) {
         return Registry.register(Registry.STATUS_EFFECT, new Identifier(MOD_ID, id), effect);
