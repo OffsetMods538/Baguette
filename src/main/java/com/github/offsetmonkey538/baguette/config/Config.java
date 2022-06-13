@@ -43,7 +43,7 @@ public final class Config implements Serializable {
     private int   sculkBaguetteSilencedAmplifier =           0;
     private float sculkBaguetteSilencedChance =              100;
 
-    private int   baguettagonLevitationDurationTicks =       180; // Default value is 180(9 seconds) because that's how long the music lasts
+    private int   baguettagonLevitationDurationTicks =       190; // Default value is 190(9.5 seconds) because that's how long the music lasts
     private int   baguettagonLevitationAmplifier =           0;
     private float baguettagonLevitationChance =              100;
 
