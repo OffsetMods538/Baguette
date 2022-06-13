@@ -105,10 +105,7 @@ public final class ModFoodComponents {
                     getConfig().getGoldenBaguetteGlowingChance())
             .build();
 
-    public static final FoodComponent DEATH_BAGUETTE = new FoodComponent.Builder()
-            .hunger(BAGUETTE.getHunger())
-            .saturationModifier(BAGUETTE.getSaturationModifier())
-            .build();
+    public static final FoodComponent DEATH_BAGUETTE = BAGUETTE;
 
     public static final FoodComponent FROG_BAGUETTE = new FoodComponent.Builder()
             .hunger(BAGUETTE.getHunger())
@@ -128,10 +125,7 @@ public final class ModFoodComponents {
                     getConfig().getSculkBaguetteSilencedChance())
             .build();
 
-    public static final FoodComponent END_BAGUETTE = new FoodComponent.Builder()
-            .hunger(BAGUETTE.getHunger())
-            .saturationModifier(BAGUETTE.getSaturationModifier())
-            .build();
+    public static final FoodComponent END_BAGUETTE = BAGUETTE;
 
     public static final FoodComponent BAGUETTAGON = new FoodComponent.Builder()
             .hunger(BAGUETTE.getHunger() * 5) // Made of 5 baguettes

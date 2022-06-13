@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "baguette:long_baguette_sword"
+      "item": "baguette:baguette_sword"
     },
     "title": {
-      "translate": "advancements.baguette.craft_long_baguette_sword.title"
+      "translate": "advancements.baguette.craft_baguette_sword.title"
     },
     "description": {
-      "translate": "advancements.baguette.craft_long_baguette_sword.description"
+      "translate": "advancements.baguette.craft_baguette_sword.description"
     },
     "frame": "goal",
     "show_toast": true,
@@ -22,7 +22,7 @@
         "items": [
           {
             "items": [
-              "baguette:long_baguette_sword"
+              "baguette:baguette_sword"
             ]
           }
         ]

@@ -2,7 +2,7 @@ package com.github.offsetmonkey538.baguette.item;
 
 import com.github.offsetmonkey538.baguette.item.baguettes.*;
 import com.github.offsetmonkey538.baguette.item.baguettes.elements.*;
-import com.github.offsetmonkey538.baguette.item.tools.LongBaguetteSword;
+import com.github.offsetmonkey538.baguette.item.tools.BaguetteSword;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -31,7 +31,7 @@ public final class ModItems {
     public static final Item BAGUETTAGON          = register(new Baguettagon(        new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.BAGUETTAGON)),          "baguettagon");
     public static final Item BAGUECAH3DRON        = register(new Baguecah3dron(      new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.BAGUECAH3DRON)),        "baguecah3dron");
     public static final Item CREDITS_BAGUETTE     = register(new CreditsBaguette(    new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.CREDITS_BAGUETTE)),     "credits_baguette");
-    public static final Item LONG_BAGUETTE_SWORD  = register(new LongBaguetteSword(  new FabricItemSettings().group(ItemGroup.COMBAT)),                                            "long_baguette_sword");
+    public static final Item BAGUETTE_SWORD  = register(new BaguetteSword(  new FabricItemSettings().group(ItemGroup.COMBAT)),                                                     "baguette_sword");
 
     public static final Item FOR_ALL_ELEMENTAL_BAGUETTE_ADVANCEMENT = register(new Item(new FabricItemSettings()), "all_elemental_baguettes_advancement");
 
