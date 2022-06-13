@@ -70,17 +70,18 @@ jar {
 tasks.modrinth.dependsOn(tasks.modrinthSyncBody)
 modrinth {
     token         = System.getenv('MODRINTH_TOKEN')
-    projectId     = 'C62KCffR'
+    projectId     = 'baguette'
     versionNumber = project.version
     versionName   = project.version
     uploadFile    = remapJar
     versionType   = project.mod_version_type
     changelog     = rootProject.file('CHANGELOG.md').text
     syncBodyFrom  = rootProject.file('README.md').text
+    debugMode     = false
     gameVersions  = [
             "1.19"
     ]
     dependencies {
-        required.project 'P7dR8mSH'
+        required.project 'fabric-api'
     }
 }
