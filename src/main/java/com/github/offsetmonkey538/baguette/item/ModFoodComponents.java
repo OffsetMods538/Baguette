@@ -151,6 +151,11 @@ public final class ModFoodComponents {
                     getConfig().getBaguecah3dronLevitationChance())
             .build();
 
+    public static final FoodComponent CREDITS_BAGUETTE = new FoodComponent.Builder()
+            .hunger(0)
+            .saturationModifier(0)
+            .build();
+
 
     private ModFoodComponents() {
 
