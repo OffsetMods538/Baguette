@@ -43,6 +43,14 @@ public final class Config implements Serializable {
     private int   sculkBaguetteSilencedAmplifier =           0;
     private float sculkBaguetteSilencedChance =              100;
 
+    private int   baguettagonLevitationDurationTicks =       180; // Default value is 180(9 seconds) because that's how long the music lasts
+    private int   baguettagonLevitationAmplifier =           0;
+    private float baguettagonLevitationChance =              100;
+
+    private int   baguecah3dronLevitationDurationTicks =     400; // Default value is 400(20 seconds) because that's how long the music lasts
+    private int   baguecah3dronLevitationAmplifier =         0;
+    private float baguecah3dronLevitationChance =            100;
+
     private int   frogBaguetteNumberOfFrogsToSpawn =         1;
 
     private int   eastereggBaguetteNumberOfSheepToSpawn =    20;
@@ -154,6 +162,24 @@ public final class Config implements Serializable {
     public void setEndBaguetteTeleportDistance(int endBaguetteTeleportDistance) {
         this.endBaguetteTeleportDistance = endBaguetteTeleportDistance;
     }
+    public void setBaguettagonLevitationDurationTicks(int baguettagonLevitationDurationTicks) {
+        this.baguettagonLevitationDurationTicks = baguettagonLevitationDurationTicks;
+    }
+    public void setBaguettagonLevitationAmplifier(int baguettagonLevitationAmplifier) {
+        this.baguettagonLevitationAmplifier = baguettagonLevitationAmplifier;
+    }
+    public void setBaguettagonLevitationChance(float baguettagonLevitationChance) {
+        this.baguettagonLevitationChance = baguettagonLevitationChance;
+    }
+    public void setBaguecah3dronLevitationDurationTicks(int baguecah3dronLevitationDurationTicks) {
+        this.baguecah3dronLevitationDurationTicks = baguecah3dronLevitationDurationTicks;
+    }
+    public void setBaguecah3dronLevitationAmplifier(int baguecah3dronLevitationAmplifier) {
+        this.baguecah3dronLevitationAmplifier = baguecah3dronLevitationAmplifier;
+    }
+    public void setBaguecah3dronLevitationChance(float baguecah3dronLevitationChance) {
+        this.baguecah3dronLevitationChance = baguecah3dronLevitationChance;
+    }
 
 
     //
@@ -255,5 +281,23 @@ public final class Config implements Serializable {
     }
     public int getEndBaguetteTeleportDistance() {
         return endBaguetteTeleportDistance;
+    }
+    public int getBaguettagonLevitationDurationTicks() {
+        return baguettagonLevitationDurationTicks;
+    }
+    public int getBaguettagonLevitationAmplifier() {
+        return baguettagonLevitationAmplifier;
+    }
+    public float getBaguettagonLevitationChance() {
+        return baguettagonLevitationChance;
+    }
+    public int getBaguecah3dronLevitationDurationTicks() {
+        return baguecah3dronLevitationDurationTicks;
+    }
+    public int getBaguecah3dronLevitationAmplifier() {
+        return baguecah3dronLevitationAmplifier;
+    }
+    public float getBaguecah3dronLevitationChance() {
+        return baguecah3dronLevitationChance;
     }
 }

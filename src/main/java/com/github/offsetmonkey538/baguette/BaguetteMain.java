@@ -4,6 +4,7 @@ import com.github.offsetmonkey538.baguette.config.Config;
 import com.github.offsetmonkey538.baguette.config.ConfigLoader;
 import com.github.offsetmonkey538.baguette.effect.ModStatusEffects;
 import com.github.offsetmonkey538.baguette.item.ModItems;
+import com.github.offsetmonkey538.baguette.sound.ModSoundEvents;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.entrypoint.PreLaunchEntrypoint;
@@ -28,11 +29,14 @@ public class BaguetteMain implements ModInitializer, PreLaunchEntrypoint {
 
     @Override
     public void onInitialize() {
-        ModItems.register();
-        LOGGER.info("Items registered!");
-
         ModStatusEffects.register();
         LOGGER.info("Status effects registered!");
+
+        ModSoundEvents.register();
+        LOGGER.info("Sound events registered!");
+
+        ModItems.register();
+        LOGGER.info("Items registered!");
 
         LOGGER.info("Baguette has been initialized!");
     }

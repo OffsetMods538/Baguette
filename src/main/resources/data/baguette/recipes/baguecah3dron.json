@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "baguette:baguettagon"
+    },
+    {
+      "item": "baguette:baguettagon"
+    },
+    {
+      "item": "baguette:baguettagon"
+    },
+    {
+      "item": "baguette:baguettagon"
+    },
+    {
+      "item": "baguette:baguettagon"
+    },
+    {
+      "item": "baguette:baguettagon"
+    }
+  ],
+  "result": {
+    "item": "baguette:baguecah3dron",
+    "count": 1
+  }
+}

@@ -16,7 +16,8 @@
   "item.baguette.frog_baguette": "Frog Baguette",
   "item.baguette.sculk_baguette": "Sculk Baguette",
   "item.baguette.end_baguette": "End Baguette",
-
+  "item.baguette.baguettagon": "Baguettagon",
+  "item.baguette.baguecah3dron": "Baguecah3dron",
 
   "item.baguette.birthday_baguette.happy_birthday": "Happy Birthday %s!",
 
@@ -42,6 +43,8 @@
   "advancements.baguette.craft_frog_baguette.title" : "Wired Weird",
   "advancements.baguette.craft_sculk_baguette.title" : "Wardens' favorite meal",
   "advancements.baguette.craft_end_baguette.title" : "The future is now, old chorus",
+  "advancements.baguette.craft_baguettagon.title" : "2 Dimensional Menace",
+  "advancements.baguette.craft_baguecah3dron.title" : "3 Dimensional Menace",
 
   "advancements.baguette.craft_baguette.description": "Craft a baguette",
   "advancements.baguette.craft_easteregg_baguette.description": "He_Is_The_Sheep",
@@ -63,11 +66,16 @@
   "advancements.baguette.craft_frog_baguette.description" : "Craft a Frog Baguette",
   "advancements.baguette.craft_sculk_baguette.description" : "Craft a Sculk Baguette",
   "advancements.baguette.craft_end_baguette.description" : "Craft an End Baguette",
+  "advancements.baguette.craft_baguettagon.description" : "Craft a Baguettagon",
+  "advancements.baguette.craft_baguecah3dron.description" : "Craft a Baguecah3dron",
 
   "effect.baguette.silenced": "Silenced",
 
-  "baguette.config.broken.title": "Config file broken!",
-  "baguette.config.broken.text":"The configuration file for the Baguette mod couldn't be loaded correctly!\n\n\nPress 'Quit game' to quit the game.\n\nPress 'Remake the config file' to delete the config file and remake it with the default values.",
-  "baguette.config.broken.button.accept": "Remake the config file",
-  "baguette.config.broken.button.decline": "Quit game"
+  "subtitles.baguette.baguettagon": "'Among us drip on noteblocks simple' by I_Am_The_Sheep",
+  "subtitles.baguette.baguecah3dron": "'Among us drip on noteblocks complex' by I_Am_The_Sheep",
+
+  "baguette.config_broken.title": "Config file broken!",
+  "baguette.config_broken.text":"The configuration file for the Baguette mod couldn't be loaded correctly!\n\n\nPress 'Quit game' to quit the game.\n\nPress 'Remake the config file' to delete the config file and remake it with the default values.",
+  "baguette.config_broken.button.accept": "Remake the config file",
+  "baguette.config_broken.button.decline": "Quit game"
 }

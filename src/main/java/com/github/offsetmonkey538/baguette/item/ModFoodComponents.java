@@ -133,6 +133,24 @@ public final class ModFoodComponents {
             .saturationModifier(BAGUETTE.getSaturationModifier())
             .build();
 
+    public static final FoodComponent BAGUETTAGON = new FoodComponent.Builder()
+            .hunger(BAGUETTE.getHunger() * 5) // Made of 5 baguettes
+            .saturationModifier(BAGUETTE.getSaturationModifier() * 5) // Made of 5 baguettes
+            .statusEffect(new StatusEffectInstance(StatusEffects.LEVITATION,
+                            getConfig().getBaguettagonLevitationDurationTicks(),
+                            getConfig().getBaguettagonLevitationAmplifier()),
+                    getConfig().getBaguettagonLevitationChance())
+            .build();
+
+    public static final FoodComponent BAGUECAH3DRON = new FoodComponent.Builder()
+            .hunger(BAGUETTAGON.getHunger() * 6) // Made of 5 baguettagons
+            .saturationModifier(BAGUETTAGON.getSaturationModifier() * 6) // Made of 5 baguettagons
+            .statusEffect(new StatusEffectInstance(StatusEffects.LEVITATION,
+                            getConfig().getBaguecah3dronLevitationDurationTicks(),
+                            getConfig().getBaguecah3dronLevitationAmplifier()),
+                    getConfig().getBaguecah3dronLevitationChance())
+            .build();
+
 
     private ModFoodComponents() {
 
