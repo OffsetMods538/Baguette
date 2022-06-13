@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "baguette:end_baguette"
+    },
+    "title": {
+      "translate": "advancements.baguette.craft_end_baguette.title"
+    },
+    "description": {
+      "translate": "advancements.baguette.craft_end_baguette.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "baguette:craft_baguette",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "baguette:end_baguette"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

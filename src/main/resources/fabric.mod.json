@@ -4,14 +4,18 @@
   "version": "${version}",
   "name": "Baguette",
   "description": "Adds different types of baguettes to minecraft",
-  "authors": [
-    "OffsetMonkey538",
-    "WiredWeird",
-    "I_Am_The_Sheep"
-  ],
   "contact": {
-    "repo": "https://github.com/OffsetMonkey538/Baguette"
+    "sources": "https://github.com/OffsetMonkey538/Baguette",
+    "discord": "https://discord.gg/gyzk6JCVaN"
   },
+  "authors": [
+    {
+      "name": "OffsetMonkey538",
+      "contact": {
+        "homepage": "https://github.com/OffsetMonkey538"
+      }
+    }
+  ],
   "license": "MIT",
   "icon": "assets/baguette/icon.png",
   "environment": "*",

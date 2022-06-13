@@ -1,10 +1,12 @@
 package com.github.offsetmonkey538.baguette.item;
 
-import com.github.offsetmonkey538.baguette.BaguetteMain;
+import com.github.offsetmonkey538.baguette.effect.ModStatusEffects;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.FoodComponents;
+
+import static com.github.offsetmonkey538.baguette.BaguetteMain.getConfig;
 
 public final class ModFoodComponents {
     public static final FoodComponent BAGUETTE = new FoodComponent.Builder()
@@ -23,19 +25,19 @@ public final class ModFoodComponents {
             .hunger((int) (FoodComponents.BREAD.getHunger() * 1.5f))
             .saturationModifier(FoodComponents.BREAD.getSaturationModifier() * 1.5f)
             .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER,
-                            BaguetteMain.getConfig().getWaterBaguetteHungerDurationTicks(),
-                            BaguetteMain.getConfig().getWaterBaguetteHungerAmplifier()),
-                    BaguetteMain.getConfig().getWaterBaguetteHungerChance())
+                            getConfig().getWaterBaguetteHungerDurationTicks(),
+                            getConfig().getWaterBaguetteHungerAmplifier()),
+                    getConfig().getWaterBaguetteHungerChance())
 
             .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA,
-                            BaguetteMain.getConfig().getWaterBaguetteNauseaDurationTicks(),
-                            BaguetteMain.getConfig().getWaterBaguetteNauseaAmplifier()),
-                    BaguetteMain.getConfig().getWaterBaguetteNauseaChance())
+                            getConfig().getWaterBaguetteNauseaDurationTicks(),
+                            getConfig().getWaterBaguetteNauseaAmplifier()),
+                    getConfig().getWaterBaguetteNauseaChance())
 
             .statusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING,
-                            BaguetteMain.getConfig().getWaterBaguetteWaterBreathingDurationTicks(),
-                            BaguetteMain.getConfig().getWaterBaguetteWaterBreathingAmplifier()),
-                    BaguetteMain.getConfig().getWaterBaguetteWaterBreathingChance())
+                            getConfig().getWaterBaguetteWaterBreathingDurationTicks(),
+                            getConfig().getWaterBaguetteWaterBreathingAmplifier()),
+                    getConfig().getWaterBaguetteWaterBreathingChance())
             .build();
 
     public static final FoodComponent EASTEREGG_BAGUETTE = BAGUETTE;
@@ -51,56 +53,56 @@ public final class ModFoodComponents {
             .hunger(BAGUETTE.getHunger())
             .saturationModifier(BAGUETTE.getSaturationModifier())
             .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE,
-                            BaguetteMain.getConfig().getFireBaguetteFireResistanceDurationTicks(),
-                            BaguetteMain.getConfig().getFireBaguetteFireResistanceAmplifier()),
-                    BaguetteMain.getConfig().getFireBaguetteFireResistanceChance())
+                            getConfig().getFireBaguetteFireResistanceDurationTicks(),
+                            getConfig().getFireBaguetteFireResistanceAmplifier()),
+                    getConfig().getFireBaguetteFireResistanceChance())
             .build();
 
     public static final FoodComponent AIR_BAGUETTE = new FoodComponent.Builder()
             .hunger(BAGUETTE.getHunger())
             .saturationModifier(BAGUETTE.getSaturationModifier())
             .statusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING,
-                            BaguetteMain.getConfig().getAirBaguetteSlowFallingDurationTicks(),
-                            BaguetteMain.getConfig().getAirBaguetteSlowFallingAmplifier()),
-                    BaguetteMain.getConfig().getAirBaguetteSlowFallingChance())
+                            getConfig().getAirBaguetteSlowFallingDurationTicks(),
+                            getConfig().getAirBaguetteSlowFallingAmplifier()),
+                    getConfig().getAirBaguetteSlowFallingChance())
             .build();
 
     public static final FoodComponent EARTH_BAGUETTE = new FoodComponent.Builder()
             .hunger(BAGUETTE.getHunger())
             .saturationModifier(BAGUETTE.getSaturationModifier())
             .statusEffect(new StatusEffectInstance(StatusEffects.HASTE,
-                            BaguetteMain.getConfig().getEarthBaguetteHasteDurationTicks(),
-                            BaguetteMain.getConfig().getEarthBaguetteHasteAmplifier()),
-                    BaguetteMain.getConfig().getEarthBaguetteHasteChance())
+                            getConfig().getEarthBaguetteHasteDurationTicks(),
+                            getConfig().getEarthBaguetteHasteAmplifier()),
+                    getConfig().getEarthBaguetteHasteChance())
             .build();
 
     public static final FoodComponent GOLDEN_BAGUETTE = new FoodComponent.Builder()
             .hunger(BAGUETTE.getHunger())
             .saturationModifier(BAGUETTE.getSaturationModifier())
             .statusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING,
-                            BaguetteMain.getConfig().getWaterBaguetteWaterBreathingDurationTicks() * 2,
-                            BaguetteMain.getConfig().getWaterBaguetteWaterBreathingAmplifier() + 2),
-                    BaguetteMain.getConfig().getWaterBaguetteWaterBreathingChance())
+                            getConfig().getWaterBaguetteWaterBreathingDurationTicks() * 2,
+                            getConfig().getWaterBaguetteWaterBreathingAmplifier() + 2),
+                    getConfig().getWaterBaguetteWaterBreathingChance())
 
             .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE,
-                            BaguetteMain.getConfig().getFireBaguetteFireResistanceDurationTicks() * 2,
-                            BaguetteMain.getConfig().getFireBaguetteFireResistanceAmplifier() + 2),
-                    BaguetteMain.getConfig().getFireBaguetteFireResistanceChance())
+                            getConfig().getFireBaguetteFireResistanceDurationTicks() * 2,
+                            getConfig().getFireBaguetteFireResistanceAmplifier() + 2),
+                    getConfig().getFireBaguetteFireResistanceChance())
 
             .statusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING,
-                            BaguetteMain.getConfig().getAirBaguetteSlowFallingDurationTicks() * 2,
-                            BaguetteMain.getConfig().getAirBaguetteSlowFallingAmplifier() + 2),
-                    BaguetteMain.getConfig().getAirBaguetteSlowFallingChance())
+                            getConfig().getAirBaguetteSlowFallingDurationTicks() * 2,
+                            getConfig().getAirBaguetteSlowFallingAmplifier() + 2),
+                    getConfig().getAirBaguetteSlowFallingChance())
 
             .statusEffect(new StatusEffectInstance(StatusEffects.HASTE,
-                            BaguetteMain.getConfig().getEarthBaguetteHasteDurationTicks() * 2,
-                            BaguetteMain.getConfig().getEarthBaguetteHasteAmplifier() + 2),
-                    BaguetteMain.getConfig().getEarthBaguetteHasteChance())
+                            getConfig().getEarthBaguetteHasteDurationTicks() * 2,
+                            getConfig().getEarthBaguetteHasteAmplifier() + 2),
+                    getConfig().getEarthBaguetteHasteChance())
 
             .statusEffect(new StatusEffectInstance(StatusEffects.GLOWING,
-                            BaguetteMain.getConfig().getGoldenBaguetteGlowingDurationTicks(),
-                            BaguetteMain.getConfig().getGoldenBaguetteGlowingAmplifier()),
-                    BaguetteMain.getConfig().getGoldenBaguetteGlowingChance())
+                            getConfig().getGoldenBaguetteGlowingDurationTicks(),
+                            getConfig().getGoldenBaguetteGlowingAmplifier()),
+                    getConfig().getGoldenBaguetteGlowingChance())
             .build();
 
     public static final FoodComponent DEATH_BAGUETTE = new FoodComponent.Builder()
@@ -112,9 +114,46 @@ public final class ModFoodComponents {
             .hunger(BAGUETTE.getHunger())
             .saturationModifier(BAGUETTE.getSaturationModifier())
             .statusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST,
-                            BaguetteMain.getConfig().getFrogBaguetteJumpBoostDurationTicks(),
-                            BaguetteMain.getConfig().getFrogBaguetteJumpBoostAmplifier()),
-                    BaguetteMain.getConfig().getFrogBaguetteJumpBoostChance())
+                            getConfig().getFrogBaguetteJumpBoostDurationTicks(),
+                            getConfig().getFrogBaguetteJumpBoostAmplifier()),
+                    getConfig().getFrogBaguetteJumpBoostChance())
+            .build();
+
+    public static final FoodComponent SCULK_BAGUETTE = new FoodComponent.Builder()
+            .hunger(BAGUETTE.getHunger())
+            .saturationModifier(BAGUETTE.getSaturationModifier())
+            .statusEffect(new StatusEffectInstance(ModStatusEffects.SILENCED,
+                            getConfig().getSculkBaguetteSilencedDurationTicks(),
+                            getConfig().getSculkBaguetteSilencedAmplifier()),
+                    getConfig().getSculkBaguetteSilencedChance())
+            .build();
+
+    public static final FoodComponent END_BAGUETTE = new FoodComponent.Builder()
+            .hunger(BAGUETTE.getHunger())
+            .saturationModifier(BAGUETTE.getSaturationModifier())
+            .build();
+
+    public static final FoodComponent BAGUETTAGON = new FoodComponent.Builder()
+            .hunger(BAGUETTE.getHunger() * 5) // Made of 5 baguettes
+            .saturationModifier(BAGUETTE.getSaturationModifier() * 5) // Made of 5 baguettes
+            .statusEffect(new StatusEffectInstance(StatusEffects.LEVITATION,
+                            getConfig().getBaguettagonLevitationDurationTicks(),
+                            getConfig().getBaguettagonLevitationAmplifier()),
+                    getConfig().getBaguettagonLevitationChance())
+            .build();
+
+    public static final FoodComponent BAGUECAH3DRON = new FoodComponent.Builder()
+            .hunger(BAGUETTAGON.getHunger() * 6) // Made of 5 baguettagons
+            .saturationModifier(BAGUETTAGON.getSaturationModifier() * 6) // Made of 5 baguettagons
+            .statusEffect(new StatusEffectInstance(StatusEffects.LEVITATION,
+                            getConfig().getBaguecah3dronLevitationDurationTicks(),
+                            getConfig().getBaguecah3dronLevitationAmplifier()),
+                    getConfig().getBaguecah3dronLevitationChance())
+            .build();
+
+    public static final FoodComponent CREDITS_BAGUETTE = new FoodComponent.Builder()
+            .hunger(0)
+            .saturationModifier(0)
             .build();
 
 

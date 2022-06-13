@@ -2,7 +2,6 @@
 
 ## Links
 - [GitHub](https://github.com/OffsetMonkey538/Baguette)
-- [Very incomplete wiki](https://github.com/OffsetMonkey538/Baguette/wiki)
 - [Modrinth](https://modrinth.com/mod/baguette)
 - [Discord](https://discord.gg/gyzk6JCVaN)
 
@@ -21,3 +20,9 @@
 - ~~Wish infinity gauntlet~~ Golden Baguette: Gives you all the positive effects of the Water,Fire,Air,Earth Baguettes (level +2, duration *2) and also the glowing effect.
 - Death Baguette: What do you think it does?
 - Frog Baguette: Gives you jump boost 8, so you jump as high as a frog. Also spawns a frog.
+- Silenced Effect: Makes it so the Warden or a Sculk sensor won't be able to detect you.
+- Sculk Baguette: Gives you Silenced Effect.
+- End Baguette: Teleports you 10 blocks the way you are looking.
+- Baguettagon: Plays `'Among us drip on noteblocks simple' by I_Am_The_Sheep` and gives you levitation for the duration of the music.
+- Baguecahedron: Plays `'Among us drip on noteblocks complex' by I_Am_The_Sheep` and gives you levitation for the duration of the music.
+- Credits Baguette: Shows a list of all the people who have helped with this mod. Only available in creative mode, not included in the `Eat all baguettes` advancement.

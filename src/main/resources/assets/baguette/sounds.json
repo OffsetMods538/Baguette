@@ -1,0 +1,14 @@
+{
+  "baguettagon": {
+    "subtitle": "subtitles.baguette.baguettagon",
+    "sounds": [
+      "baguette:baguettagon"
+    ]
+  },
+  "baguecah3dron": {
+    "subtitle": "subtitles.baguette.baguecah3dron",
+    "sounds": [
+      "baguette:baguecah3dron"
+    ]
+  }
+}

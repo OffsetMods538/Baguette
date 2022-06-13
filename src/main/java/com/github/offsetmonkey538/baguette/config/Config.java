@@ -39,9 +39,23 @@ public final class Config implements Serializable {
     private int   frogBaguetteJumpBoostAmplifier =           7;
     private float frogBaguetteJumpBoostChance =              100;
 
+    private int   sculkBaguetteSilencedDurationTicks =       1200;
+    private int   sculkBaguetteSilencedAmplifier =           0;
+    private float sculkBaguetteSilencedChance =              100;
+
+    private int   baguettagonLevitationDurationTicks =       190; // Default value is 190(9.5 seconds) because that's how long the music lasts
+    private int   baguettagonLevitationAmplifier =           0;
+    private float baguettagonLevitationChance =              100;
+
+    private int   baguecah3dronLevitationDurationTicks =     400; // Default value is 400(20 seconds) because that's how long the music lasts
+    private int   baguecah3dronLevitationAmplifier =         0;
+    private float baguecah3dronLevitationChance =            100;
+
     private int   frogBaguetteNumberOfFrogsToSpawn =         1;
 
     private int   eastereggBaguetteNumberOfSheepToSpawn =    20;
+
+    private int   endBaguetteTeleportDistance =              10;
 
 
     public Config() {
@@ -130,12 +144,43 @@ public final class Config implements Serializable {
     public void setFrogBaguetteJumpBoostChance(float frogBaguetteJumpBoostChance) {
         this.frogBaguetteJumpBoostChance = frogBaguetteJumpBoostChance;
     }
+    public void setSculkBaguetteSilencedDurationTicks(int sculkBaguetteSilencedDurationTicks) {
+        this.sculkBaguetteSilencedDurationTicks = sculkBaguetteSilencedDurationTicks;
+    }
+    public void setSculkBaguetteSilencedAmplifier(int sculkBaguetteSilencedAmplifier) {
+        this.sculkBaguetteSilencedAmplifier = sculkBaguetteSilencedAmplifier;
+    }
+    public void setSculkBaguetteSilencedChance(float sculkBaguetteSilencedChance) {
+        this.sculkBaguetteSilencedChance = sculkBaguetteSilencedChance;
+    }
     public void setFrogBaguetteNumberOfFrogsToSpawn(int frogBaguetteNumberOfFrogsToSpawn) {
         this.frogBaguetteNumberOfFrogsToSpawn = frogBaguetteNumberOfFrogsToSpawn;
     }
     public void setEastereggBaguetteNumberOfSheepToSpawn(int eastereggBaguetteNumberOfSheepToSpawn) {
         this.eastereggBaguetteNumberOfSheepToSpawn = eastereggBaguetteNumberOfSheepToSpawn;
     }
+    public void setEndBaguetteTeleportDistance(int endBaguetteTeleportDistance) {
+        this.endBaguetteTeleportDistance = endBaguetteTeleportDistance;
+    }
+    public void setBaguettagonLevitationDurationTicks(int baguettagonLevitationDurationTicks) {
+        this.baguettagonLevitationDurationTicks = baguettagonLevitationDurationTicks;
+    }
+    public void setBaguettagonLevitationAmplifier(int baguettagonLevitationAmplifier) {
+        this.baguettagonLevitationAmplifier = baguettagonLevitationAmplifier;
+    }
+    public void setBaguettagonLevitationChance(float baguettagonLevitationChance) {
+        this.baguettagonLevitationChance = baguettagonLevitationChance;
+    }
+    public void setBaguecah3dronLevitationDurationTicks(int baguecah3dronLevitationDurationTicks) {
+        this.baguecah3dronLevitationDurationTicks = baguecah3dronLevitationDurationTicks;
+    }
+    public void setBaguecah3dronLevitationAmplifier(int baguecah3dronLevitationAmplifier) {
+        this.baguecah3dronLevitationAmplifier = baguecah3dronLevitationAmplifier;
+    }
+    public void setBaguecah3dronLevitationChance(float baguecah3dronLevitationChance) {
+        this.baguecah3dronLevitationChance = baguecah3dronLevitationChance;
+    }
+
 
     //
     // Getters
@@ -219,10 +264,40 @@ public final class Config implements Serializable {
     public float getFrogBaguetteJumpBoostChance() {
         return frogBaguetteJumpBoostChance;
     }
+    public int getSculkBaguetteSilencedDurationTicks() {
+        return sculkBaguetteSilencedDurationTicks;
+    }
+    public int getSculkBaguetteSilencedAmplifier() {
+        return sculkBaguetteSilencedAmplifier;
+    }
+    public float getSculkBaguetteSilencedChance() {
+        return sculkBaguetteSilencedChance;
+    }
     public int getFrogBaguetteNumberOfFrogsToSpawn() {
         return frogBaguetteNumberOfFrogsToSpawn;
     }
     public int getEastereggBaguetteNumberOfSheepToSpawn() {
         return eastereggBaguetteNumberOfSheepToSpawn;
+    }
+    public int getEndBaguetteTeleportDistance() {
+        return endBaguetteTeleportDistance;
+    }
+    public int getBaguettagonLevitationDurationTicks() {
+        return baguettagonLevitationDurationTicks;
+    }
+    public int getBaguettagonLevitationAmplifier() {
+        return baguettagonLevitationAmplifier;
+    }
+    public float getBaguettagonLevitationChance() {
+        return baguettagonLevitationChance;
+    }
+    public int getBaguecah3dronLevitationDurationTicks() {
+        return baguecah3dronLevitationDurationTicks;
+    }
+    public int getBaguecah3dronLevitationAmplifier() {
+        return baguecah3dronLevitationAmplifier;
+    }
+    public float getBaguecah3dronLevitationChance() {
+        return baguecah3dronLevitationChance;
     }
 }
