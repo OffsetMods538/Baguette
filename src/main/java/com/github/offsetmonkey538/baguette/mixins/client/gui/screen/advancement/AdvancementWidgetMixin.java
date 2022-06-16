@@ -23,9 +23,8 @@ public class AdvancementWidgetMixin {
     @Shadow
     private OrderedText title;
 
-    @Inject(method = "<init>", at = @At("RETURN"))
+    @Inject(method = "<init>", at = @At(value = "INVOKE", target = "Ljava/lang/String;length()I", shift = At.Shift.AFTER))
     private void modifyTitle(AdvancementTab tab, MinecraftClient client, Advancement advancement, AdvancementDisplay display, CallbackInfo ci) {
         title = Language.getInstance().reorder(display.getTitle());
     }
-
 }

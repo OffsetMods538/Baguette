@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "baguette:item/all_elemental_baguettes_advancement"
-  }
-}

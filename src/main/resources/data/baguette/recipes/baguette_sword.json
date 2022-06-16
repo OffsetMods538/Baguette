@@ -1,23 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "   ",
-    " L ",
-    "BSB"
+    " B ",
+    " B ",
+    " S "
   ],
   "key": {
-    "L": {
-      "item": "baguette:long_baguette"
-    },
     "B": {
-      "item": "minecraft:bread"
+      "item": "baguette:baguette"
     },
     "S": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "baguette:long_baguette_sword",
+    "item": "baguette:baguette_sword",
     "count": 1
   }
 }

@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:blaze_powder"
+    },
+    "title": {
+      "translate": "advancements.baguette.kill_blaze_using_baguette_sword.title"
+    },
+    "description": {
+      "translate": "advancements.baguette.kill_blaze_using_baguette_sword.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "annouce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "baguette:kill_zombie_using_baguette_sword",
+  "criteria": {
+    "requirement": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:blaze"
+        }
+      }
+    }
+  }
+}

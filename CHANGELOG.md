@@ -1,8 +1,13 @@
 # Changelog
 ## Added
-- Silenced Effect: Makes it so the Warden or a Sculk sensor won't be able to detect you.
-- Sculk Baguette: Gives you Silenced Effect.
-- End Baguette: Teleports you 10 blocks the way you are looking.
-- Baguettagon: Plays `'Among us drip on noteblocks simple' by I_Am_The_Sheep` and gives you levitation for the duration of the music.
-- Baguecahedron: Plays `'Among us drip on noteblocks complex' by I_Am_The_Sheep` and gives you levitation for the duration of the music.
-- Credits Baguette: Shows a list of all the people who have helped with this mod. Only available in creative mode, not included in the `Eat all baguettes` advancement.
+- 4 new advancements: `Kill Zombie with Baguette Sword`, `Kill Blaze using Baguette Sword`, `Kill Ender Dragon using Baguette Sword` and `Kill all hostile mobs using Baguette Sword`
+- Information on how to craft items is in advancement descriptions.
+## Removed
+- Recipe for crafting the TNT Baguette using 3 Bread and 4 TNT
+## Changed
+- Baguette Sword recipe: Now only requires 1 Stick and 2 Baguettes
+- Air Baguette recipe: Now only requires 1 Baguette and 4 Phantom Membranes
+- Earth Baguette recipe: Now only requires 1 Baguette and 4 Dirt
+- Frog Baguette recipe: Now only requires 1 Baguette and 4 Froglights
+## Fixed
+- Advancement names now don't go over the bar, the bar extends to fit the text.

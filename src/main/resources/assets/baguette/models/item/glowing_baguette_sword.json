@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/handheld",
 	"textures": {
-		"layer0": "baguette:item/long_baguette_sword"
+		"layer0": "baguette:item/glowing_baguette_sword"
 	},
 	"display": {
 		"thirdperson_righthand": {

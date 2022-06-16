@@ -6,10 +6,10 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 
-public class LongBaguetteSword extends SwordItem {
+public class BaguetteSword extends SwordItem {
 
-    public LongBaguetteSword(Settings settings) {
-        super(new LongBaguetteToolMaterial(), 4, -3.1F, settings);
+    public BaguetteSword(Settings settings) {
+        super(new BaguetteToolMaterial(), 4, -3.1F, settings);
     }
 
     @Override

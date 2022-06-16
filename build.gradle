@@ -19,6 +19,13 @@ repositories {
     // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
     // See https://docs.gradle.org/current/userguide/declaring_repositories.html
     // for more information about repositories.
+    maven {
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
+        content {
+            includeGroup "maven.modrinth"
+        }
+    }
 }
 
 dependencies {
@@ -29,6 +36,9 @@ dependencies {
 
     // Fabric api
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+    // When Entities Die (mod by me) for an advancement trigger.
+    modImplementation include("maven.modrinth:when-entities-die:1.0+1.19")
 
     // Snakeyaml for configs
     implementation include ("org.yaml:snakeyaml:${project.snakeyaml_version}")
