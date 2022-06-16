@@ -34,6 +34,7 @@ public final class ModItems {
     public static final Item BAGUETTE_SWORD  = register(new BaguetteSword(  new FabricItemSettings().group(ItemGroup.COMBAT)),                                                     "baguette_sword");
 
     public static final Item ALL_ELEMENTAL_BAGUETTES = register(new Item(new FabricItemSettings()), "all_elemental_baguettes");
+    public static final Item GLOWING_BAGUETTE_SWORD = register(new Item(new FabricItemSettings()), "glowing_baguette_sword");
 
     private ModItems() {
 
