@@ -47,6 +47,10 @@
   "advancements.baguette.craft_end_baguette.title" : "The future is now, old chorus",
   "advancements.baguette.craft_baguettagon.title" : "2 Dimensional Menace",
   "advancements.baguette.craft_baguecah3dron.title" : "3 Dimensional Menace",
+  "advancements.baguette.kill_zombie_using_baguette_sword.title" : "Baguettes vs Zombies",
+  "advancements.baguette.kill_blaze_using_baguette_sword.title" : "Burnt Baguette",
+  "advancements.baguette.kill_ender_dragon_using_baguette_sword.title" : "Free the Baguette",
+  "advancements.baguette.kill_all_hostile_mobs_using_baguette_sword.title" : "Monsters Baguetted",
 
   "advancements.baguette.craft_baguette.description": "Craft a baguette",
   "advancements.baguette.craft_easteregg_baguette.description": "He_Is_The_Sheep",
@@ -70,6 +74,10 @@
   "advancements.baguette.craft_end_baguette.description" : "Craft an End Baguette",
   "advancements.baguette.craft_baguettagon.description" : "Craft a Baguettagon",
   "advancements.baguette.craft_baguecah3dron.description" : "Craft a Baguecah3dron",
+  "advancements.baguette.kill_zombie_using_baguette_sword.description" : "Kill a Zombie using a Baguette Sword",
+  "advancements.baguette.kill_blaze_using_baguette_sword.description" : "Kill a Blaze using a Baguette Sword",
+  "advancements.baguette.kill_ender_dragon_using_baguette_sword.description" : "Kill the Ender Dragon using a Baguette Sword",
+  "advancements.baguette.kill_all_hostile_mobs_using_baguette_sword.description" : "Kill all hostile mobs using a Baguette Sword",
 
   "effect.baguette.silenced": "Silenced",
 
