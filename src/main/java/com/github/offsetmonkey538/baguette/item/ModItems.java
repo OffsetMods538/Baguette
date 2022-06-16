@@ -33,7 +33,7 @@ public final class ModItems {
     public static final Item CREDITS_BAGUETTE     = register(new CreditsBaguette(    new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.CREDITS_BAGUETTE)),     "credits_baguette");
     public static final Item BAGUETTE_SWORD  = register(new BaguetteSword(  new FabricItemSettings().group(ItemGroup.COMBAT)),                                                     "baguette_sword");
 
-    public static final Item FOR_ALL_ELEMENTAL_BAGUETTE_ADVANCEMENT = register(new Item(new FabricItemSettings()), "all_elemental_baguettes_advancement");
+    public static final Item ALL_ELEMENTAL_BAGUETTES = register(new Item(new FabricItemSettings()), "all_elemental_baguettes");
 
     private ModItems() {
 

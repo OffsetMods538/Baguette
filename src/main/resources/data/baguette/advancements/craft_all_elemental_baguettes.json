@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "baguette:all_elemental_baguettes_advancement"
+      "item": "baguette:all_elemental_baguettes"
     },
     "title": {
       "translate": "advancements.baguette.craft_all_elemental_baguettes.title"
