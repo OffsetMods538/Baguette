@@ -31,6 +31,7 @@ public final class ModItems {
     public static final Item BAGUETTAGON          = register(new Baguettagon(        new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.BAGUETTAGON)),          "baguettagon");
     public static final Item BAGUECAH3DRON        = register(new Baguecah3dron(      new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.BAGUECAH3DRON)),        "baguecah3dron");
     public static final Item CREDITS_BAGUETTE     = register(new CreditsBaguette(    new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.CREDITS_BAGUETTE)),     "credits_baguette");
+    public static final Item QUESTION_BAGUETTE    = register(new QuestionBaguette(   new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.QUESTION_BAGUETTE)),    "question_baguette");
     public static final Item BAGUETTE_SWORD  = register(new BaguetteSword(  new FabricItemSettings().group(ItemGroup.COMBAT)),                                                     "baguette_sword");
 
     public static final Item ALL_ELEMENTAL_BAGUETTES = register(new Item(new FabricItemSettings()), "all_elemental_baguettes");
