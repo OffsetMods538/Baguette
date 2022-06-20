@@ -10,6 +10,7 @@ public final class ModSoundEvents {
 
     public static final SoundEvent BAGUETTAGON   = register("baguettagon");
     public static final SoundEvent BAGUECAH3DRON = register("baguecah3dron");
+    public static final SoundEvent HAPPY_BIRTHDAY = register("happy_birthday");
 
     private ModSoundEvents() {
 

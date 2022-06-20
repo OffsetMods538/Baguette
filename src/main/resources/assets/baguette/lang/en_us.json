@@ -83,6 +83,7 @@
 
   "subtitles.baguette.baguettagon": "'Among us drip on noteblocks simple' by I_Am_The_Sheep",
   "subtitles.baguette.baguecah3dron": "'Among us drip on noteblocks complex' by I_Am_The_Sheep",
+  "subtitles.baguette.happy_birthday": "'Happy Birthday on noteblocks' by I_Am_The_Sheep",
 
   "baguette.config_broken.title": "Config file broken!",
   "baguette.config_broken.text":"The configuration file for the Baguette mod couldn't be loaded correctly!\n\n\nPress 'Quit game' to quit the game.\n\nPress 'Remake the config file' to delete the config file and remake it with the default values.",
