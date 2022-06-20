@@ -150,6 +150,8 @@ public final class ModFoodComponents {
             .saturationModifier(0)
             .build();
 
+    public static final FoodComponent QUESTION_BAGUETTE = BAGUETTE;
+
 
     private ModFoodComponents() {
 
