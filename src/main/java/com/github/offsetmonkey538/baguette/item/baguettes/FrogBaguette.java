@@ -2,8 +2,8 @@ package com.github.offsetmonkey538.baguette.item.baguettes;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.passive.FrogEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Text;
 import net.minecraft.world.World;
 
@@ -17,11 +17,10 @@ public class FrogBaguette extends Baguette {
 
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
-        for (int i = 0; i < getConfig().getFrogBaguetteNumberOfFrogsToSpawn(); i++) {
-            FrogEntity frogEntity = new FrogEntity(EntityType.FROG, world);
-            frogEntity.setCustomName(Text.of("WiredWierd"));
-            frogEntity.setPos(user.getX(), user.getY() + 0.5, user.getZ());
-            world.spawnEntity(frogEntity);
+        if (!world.isClient()) {
+            for (int i = 0; i < getConfig().getEastereggBaguetteNumberOfSheepToSpawn(); i++) {
+                EntityType.FROG.spawn((ServerWorld) world, null, Text.of("WiredWierd"), null, user.getBlockPos().add(0, 0.5, 0), null, false, false);
+            }
         }
 
         return super.finishUsing(stack, world, user);

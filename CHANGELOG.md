@@ -6,4 +6,4 @@
 ## Changed
 - Birthday Baguette now plays happy birthday when eaten
 ## Fixed
-- none
+- Sheep spawned by Béguette now don't float.
