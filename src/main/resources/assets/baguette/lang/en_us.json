@@ -20,6 +20,7 @@
   "item.baguette.baguecah3dron": "Baguecah3dron",
   "item.baguette.credits_baguette": "Credits Baguette",
   "item.baguette.glowing_baguette_sword": "You cheated for this!",
+  "item.baguette.question_baguette": "Question Baguette",
 
   "item.baguette.birthday_baguette.happy_birthday": "Happy Birthday %s!",
 
@@ -51,6 +52,9 @@
   "advancements.baguette.kill_blaze_using_baguette_sword.title" : "Burnt Baguette",
   "advancements.baguette.kill_ender_dragon_using_baguette_sword.title" : "Free the Baguette",
   "advancements.baguette.kill_all_hostile_mobs_using_baguette_sword.title" : "Monsters Baguetted",
+  "advancements.baguette.craft_question_baguette.title": "Craft question baguette title",
+  "advancements.baguette.get_question_baguette_question_wrong.title": "Get question baguette question wrong title",
+  "advancements.baguette.get_question_baguette_question_right.title": "Get question baguette question right title",
 
   "advancements.baguette.craft_baguette.description": "Craft a Baguette using 3 Bread",
   "advancements.baguette.craft_easteregg_baguette.description": "He_Is_The_Sheep",
@@ -78,6 +82,9 @@
   "advancements.baguette.kill_blaze_using_baguette_sword.description" : "Kill a Blaze using a Baguette Sword",
   "advancements.baguette.kill_ender_dragon_using_baguette_sword.description" : "Kill the Ender Dragon using a Baguette Sword",
   "advancements.baguette.kill_all_hostile_mobs_using_baguette_sword.description" : "Kill all hostile mobs using a Baguette Sword",
+  "advancements.baguette.craft_question_baguette.description": "Craft Question Baguette using TODO",
+  "advancements.baguette.get_question_baguette_question_wrong.description": "Get question baguette question wrong description",
+  "advancements.baguette.get_question_baguette_question_right.description": "Get question baguette question right description",
 
   "effect.baguette.silenced": "Silenced",
 
