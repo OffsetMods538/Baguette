@@ -18,7 +18,7 @@ public class FrogBaguette extends Baguette {
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
         if (!world.isClient()) {
-            for (int i = 0; i < getConfig().getEastereggBaguetteNumberOfSheepToSpawn(); i++) {
+            for (int i = 0; i < getConfig().getFrogBaguetteNumberOfFrogsToSpawn(); i++) {
                 EntityType.FROG.spawn((ServerWorld) world, null, Text.of("WiredWierd"), null, user.getBlockPos().add(0, 0.5, 0), null, false, false);
             }
         }
