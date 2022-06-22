@@ -12,10 +12,10 @@
   ],
   "client": [
     "client.gui.screen.TitleScreenMixin",
-    "client.gui.screen.advancement.AdvancementWidgetMixin"
+    "client.gui.screen.advancement.AdvancementWidgetMixin",
+    "client.network.ClientPlayerEntityMixin"
   ],
   "server": [
-
   ],
   "injectors": {
     "defaultRequire": 1
