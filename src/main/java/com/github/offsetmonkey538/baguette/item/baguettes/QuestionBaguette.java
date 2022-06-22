@@ -116,7 +116,6 @@ public class QuestionBaguette extends Baguette {
         }
     }
 
-    @SuppressWarnings("SameParameterValue")
     private void addHealth(ServerPlayerEntity player, double health) {
         EntityAttributeInstance attributeInstance = player.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH);
 
@@ -124,7 +123,6 @@ public class QuestionBaguette extends Baguette {
             attributeInstance.addPersistentModifier(new EntityAttributeModifier(this.getTranslationKey(), health, EntityAttributeModifier.Operation.ADDITION));
     }
 
-    @SuppressWarnings("SameParameterValue")
     private void removeHealth(ServerPlayerEntity player, double health) {
         EntityAttributeInstance attributeInstance = player.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH);
 
