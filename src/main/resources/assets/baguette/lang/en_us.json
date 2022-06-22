@@ -22,6 +22,13 @@
   "item.baguette.glowing_baguette_sword": "You cheated for this!",
   "item.baguette.question_baguette": "Question Baguette",
 
+  "item.baguette.question_baguette.maximum_health": "Maximum health reached!",
+  "item.baguette.question_baguette.minimum_health": "Minimum health reached!",
+  "item.baguette.question_baguette.correct": "'%s' was the correct answer!",
+  "item.baguette.question_baguette.incorrect": "'%s' was not the correct answer! The correct answer was '%s'.",
+  "item.baguette.question_baguette.questions": "",
+  "item.baguette.question_baguette.answers": "",
+
   "item.baguette.birthday_baguette.happy_birthday": "Happy Birthday %s!",
 
   "death.attack.death_baguette": "%s ate a Death Baguette",
