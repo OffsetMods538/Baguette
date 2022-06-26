@@ -26,7 +26,7 @@
   "item.baguette.question_baguette.minimum_health": "Minimum health reached!",
   "item.baguette.question_baguette.correct": "'%s' was the correct answer!",
   "item.baguette.question_baguette.incorrect": "'%s' was not the correct answer! The correct answer was '%s'.",
-  "item.baguette.question_baguette.questions": "What are two things you can never eat for breakfast?-NEXT_QUESTION-What is always coming but never arrives?-NEXT_QUESTION-What gets wetter the more it dries?-NEXT_QUESTION-What can be broken but never held?-NEXT_QUESTION-What word is spelled incorrectly in every single dictionary?-NEXT_QUESTION-What is it that lives if it is fed-NEXT_QUESTION- and dies if you give it a drink?-NEXT_QUESTION-What can one catch that is not thrown?",
+  "item.baguette.question_baguette.questions": "What are two things you can never eat for breakfast?-NEXT_QUESTION-What is always coming but never arrives?-NEXT_QUESTION-What gets wetter the more it dries?-NEXT_QUESTION-What can be broken but never held?-NEXT_QUESTION-What word is spelled incorrectly in every single dictionary?-NEXT_QUESTION-What is it that lives if it is fed, and dies if you give it a drink?-NEXT_QUESTION-What can one catch that is not thrown?",
   "item.baguette.question_baguette.answers": "Lunch and Dinner-NEXT_ANSWER-Tomorrow-NEXT_ANSWER-A towel-NEXT_ANSWER-A promise-NEXT_ANSWER-Incorrectly-NEXT_ANSWER-Fire-NEXT_ANSWER-A cold",
 
   "item.baguette.birthday_baguette.happy_birthday": "Happy Birthday %s!",
