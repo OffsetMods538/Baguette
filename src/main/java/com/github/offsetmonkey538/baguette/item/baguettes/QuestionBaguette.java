@@ -109,10 +109,10 @@ public class QuestionBaguette extends Baguette {
     }
 
     /**
-     * Checks if the sent message is the correct or incorrect answer.
+     * Checks if the sent message is by a player who hs a pending question and if the answer is correct or incorrect.
      * @param message The message the player sent.
      * @param sender The player that sent the message.
-     * @return False if the player has a question. True if they don't.
+     * @return False if the player has a pending question. True if they don't.
      */
     @Environment(EnvType.CLIENT)
     public boolean onMessage(String message, ClientPlayerEntity sender) {
