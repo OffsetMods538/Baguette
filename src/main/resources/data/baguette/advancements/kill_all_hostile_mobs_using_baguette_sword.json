@@ -1,0 +1,498 @@
+{
+  "display": {
+    "icon": {
+      "item": "baguette:glowing_baguette_sword"
+    },
+    "title": {
+      "translate": "advancements.baguette.kill_all_hostile_mobs_using_baguette_sword.title"
+    },
+    "description": {
+      "translate": "advancements.baguette.kill_all_hostile_mobs_using_baguette_sword.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "annouce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "baguette:craft_baguette_sword",
+  "criteria": {
+    "blaze": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:blaze"
+        }
+      }
+    },
+    "cave_spider": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:cave_spider"
+        }
+      }
+    },
+    "creeper": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:creeper"
+        }
+      }
+    },
+    "drowned": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:drowned"
+        }
+      }
+    },
+    "elder_guardian": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:elder_guardian"
+        }
+      }
+    },
+    "ender_dragon": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:ender_dragon"
+        }
+      }
+    },
+    "enderman": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:enderman"
+        }
+      }
+    },
+    "endermite": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:endermite"
+        }
+      }
+    },
+    "evoker": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:evoker"
+        }
+      }
+    },
+    "ghast": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:ghast"
+        }
+      }
+    },
+    "guardian": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:guardian"
+        }
+      }
+    },
+    "hoglin": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:hoglin"
+        }
+      }
+    },
+    "husk": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:husk"
+        }
+      }
+    },
+    "magma_cube": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:magma_cube"
+        }
+      }
+    },
+    "phantom": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:phantom"
+        }
+      }
+    },
+    "piglin": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:piglin"
+        }
+      }
+    },
+    "piglin_brute": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:piglin_brute"
+        }
+      }
+    },
+    "pillager": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:pillager"
+        }
+      }
+    },
+    "ravager": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:ravager"
+        }
+      }
+    },
+    "shulker": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:shulker"
+        }
+      }
+    },
+    "silverfish": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:silverfish"
+        }
+      }
+    },
+    "skeleton": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:skeleton"
+        }
+      }
+    },
+    "slime": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:slime"
+        }
+      }
+    },
+    "spider": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:spider"
+        }
+      }
+    },
+    "stray": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:stray"
+        }
+      }
+    },
+    "vex": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:vex"
+        }
+      }
+    },
+    "vindicator": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:vindicator"
+        }
+      }
+    },
+    "witch": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:witch"
+        }
+      }
+    },
+    "wither": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:wither"
+        }
+      }
+    },
+    "wither_skeleton": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:wither_skeleton"
+        }
+      }
+    },
+    "zoglin": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:zoglin"
+        }
+      }
+    },
+    "zombie": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:zombie"
+        }
+      }
+    },
+    "zombie_villager": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:zombie_villager"
+        }
+      }
+    },
+    "zombified_piglin": {
+      "trigger": "when-entities-die:killed_using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguette_sword"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:zombified_piglin"
+        }
+      }
+    }
+  },
+  "requirements": [
+    ["blaze"],
+    ["cave_spider"],
+    ["creeper"],
+    ["drowned"],
+    ["elder_guardian"],
+    ["ender_dragon"],
+    ["enderman"],
+    ["endermite"],
+    ["evoker"],
+    ["ghast"],
+    ["guardian"],
+    ["hoglin"],
+    ["husk"],
+    ["magma_cube"],
+    ["phantom"],
+    ["piglin"],
+    ["piglin_brute"],
+    ["pillager"],
+    ["ravager"],
+    ["shulker"],
+    ["silverfish"],
+    ["skeleton"],
+    ["slime"],
+    ["spider"],
+    ["stray"],
+    ["vex"],
+    ["vindicator"],
+    ["witch"],
+    ["wither_skeleton"],
+    ["wither"],
+    ["zoglin"],
+    ["zombie_villager"],
+    ["zombie"],
+    ["zombified_piglin"]
+  ]
+}

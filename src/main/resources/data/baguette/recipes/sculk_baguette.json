@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    "SBS",
+    " S "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:sculk"
+    },
+    "B": {
+      "item": "baguette:baguette"
+    }
+  },
+  "result": {
+    "item": "baguette:sculk_baguette",
+    "count": 1
+  }
+}

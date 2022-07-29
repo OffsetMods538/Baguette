@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "baguette:baguette_sword"
+    },
+    "title": {
+      "translate": "advancements.baguette.craft_baguette_sword.title"
+    },
+    "description": {
+      "translate": "advancements.baguette.craft_baguette_sword.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "baguette:craft_long_baguette",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "baguette:baguette_sword"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -14,7 +14,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "baguette:all_elemental_baguettes",
+  "parent": "baguette:craft_all_elemental_baguettes",
   "criteria": {
     "baguette": {
       "trigger": "minecraft:consume_item",
@@ -42,6 +42,16 @@
         "item": {
           "items": [
             "baguette:tnt_baguette"
+          ]
+        }
+      }
+    },
+    "easteregg_baguette": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:easteregg_baguette"
           ]
         }
       }
@@ -115,38 +125,85 @@
           ]
         }
       }
+    },
+    "death_baguette": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:death_baguette"
+          ]
+        }
+      }
+    },
+    "frog_baguette": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:frog_baguette"
+          ]
+        }
+      }
+    },
+    "sculk_baguette": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:sculk_baguette"
+          ]
+        }
+      }
+    },
+    "end_baguette": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:end_baguette"
+          ]
+        }
+      }
+    },
+    "baguettagon": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguettagon"
+          ]
+        }
+      }
+    },
+    "baguecah3dron": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "baguette:baguecah3dron"
+          ]
+        }
+      }
     }
   },
   "requirements": [
-    [
-      "baguette"
-    ],
-    [
-      "long_baguette"
-    ],
-    [
-      "tnt_baguette"
-    ],
-    [
-      "charged_tnt_baguette"
-    ],
-    [
-      "birthday_baguette"
-    ],
-    [
-      "water_baguette"
-    ],
-    [
-      "fire_baguette"
-    ],
-    [
-      "air_baguette"
-    ],
-    [
-      "earth_baguette"
-    ],
-    [
-      "golden_baguette"
-    ]
+    ["baguette"],
+    ["long_baguette"],
+    ["tnt_baguette"],
+    ["easteregg_baguette"],
+    ["charged_tnt_baguette"],
+    ["birthday_baguette"],
+    ["water_baguette"],
+    ["fire_baguette"],
+    ["air_baguette"],
+    ["earth_baguette"],
+    ["golden_baguette"],
+    ["death_baguette"],
+    ["frog_baguette"],
+    ["sculk_baguette"],
+    ["end_baguette"],
+    ["baguettagon"],
+    ["baguecah3dron"]
   ]
 }
