@@ -4,24 +4,19 @@
   "version": "${version}",
   "name": "Baguette",
   "description": "Adds different types of baguettes to minecraft",
-  "contact": {
-    "sources": "https://github.com/OffsetMonkey538/Baguette",
-    "discord": "https://discord.gg/gyzk6JCVaN"
-  },
   "authors": [
-    {
-      "name": "OffsetMonkey538",
-      "contact": {
-        "homepage": "https://github.com/OffsetMonkey538"
-      }
-    }
+    "OffsetMonkey538",
+    "WiredWeird"
   ],
+  "contact": {
+    "repo": "https://github.com/OffsetMonkey538/Baguette"
+  },
   "license": "MIT",
   "icon": "assets/baguette/icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-
+      "com.github.offsetmonkey538.baguette.client.BaguetteClient"
     ],
     "main": [
       "com.github.offsetmonkey538.baguette.BaguetteMain"
@@ -34,11 +29,7 @@
     "baguette.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.14.6",
-    "fabric": "*",
-    "minecraft": [
-      "1.19"
-    ],
-    "java": ">=17"
+    "fabricloader": "*",
+    "fabric": "*"
   }
 }
