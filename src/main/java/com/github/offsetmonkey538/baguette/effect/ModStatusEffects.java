@@ -2,10 +2,11 @@ package com.github.offsetmonkey538.baguette.effect;
 
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectCategory;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
-import static com.github.offsetmonkey538.baguette.BaguetteMain.MOD_ID;
+import static com.github.offsetmonkey538.baguette.BaguetteMain.*;
 
 public final class ModStatusEffects {
 
@@ -17,7 +18,7 @@ public final class ModStatusEffects {
 
     @SuppressWarnings("SameParameterValue")
     private static StatusEffect register(StatusEffect effect, String id) {
-        return Registry.register(Registry.STATUS_EFFECT, new Identifier(MOD_ID, id), effect);
+        return Registry.register(Registries.STATUS_EFFECT, new Identifier(MOD_ID, id), effect);
     }
 
     public static void register() {
