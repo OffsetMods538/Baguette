@@ -20,6 +20,14 @@
   "item.baguette.baguecah3dron": "Baguecah3dron",
   "item.baguette.credits_baguette": "Credits Baguette",
   "item.baguette.glowing_baguette_sword": "You cheated for this!",
+  "item.baguette.question_baguette": "Question Baguette",
+
+  "item.baguette.question_baguette.maximum_health": "Maximum health reached!",
+  "item.baguette.question_baguette.minimum_health": "Minimum health reached!",
+  "item.baguette.question_baguette.correct": "'%s' was the correct answer!",
+  "item.baguette.question_baguette.incorrect": "'%s' was not the correct answer! The correct answer was '%s'.",
+  "item.baguette.question_baguette.questions": "What are two things you can never eat for breakfast?-NEXT_QUESTION-What is always coming but never arrives?-NEXT_QUESTION-What gets wetter the more it dries?-NEXT_QUESTION-What can be broken but never held?-NEXT_QUESTION-What word is spelled incorrectly in every single dictionary?-NEXT_QUESTION-What is it that lives if it is fed, and dies if you give it a drink?-NEXT_QUESTION-What can one catch that is not thrown?",
+  "item.baguette.question_baguette.answers": "Lunch and Dinner-NEXT_ANSWER-Tomorrow-NEXT_ANSWER-A towel-NEXT_ANSWER-A promise-NEXT_ANSWER-Incorrectly-NEXT_ANSWER-Fire-NEXT_ANSWER-A cold",
 
   "item.baguette.birthday_baguette.happy_birthday": "Happy Birthday %s!",
 
@@ -51,6 +59,9 @@
   "advancements.baguette.kill_blaze_using_baguette_sword.title" : "Burnt Baguette",
   "advancements.baguette.kill_ender_dragon_using_baguette_sword.title" : "Free the Baguette",
   "advancements.baguette.kill_all_hostile_mobs_using_baguette_sword.title" : "Monsters Baguetted",
+  "advancements.baguette.craft_question_baguette.title": "Craft question baguette title",
+  "advancements.baguette.get_question_baguette_question_wrong.title": "Get question baguette question wrong title",
+  "advancements.baguette.get_question_baguette_question_right.title": "Get question baguette question right title",
 
   "advancements.baguette.craft_baguette.description": "Craft a Baguette using 3 Bread",
   "advancements.baguette.craft_easteregg_baguette.description": "He_Is_The_Sheep",
@@ -78,16 +89,15 @@
   "advancements.baguette.kill_blaze_using_baguette_sword.description" : "Kill a Blaze using a Baguette Sword",
   "advancements.baguette.kill_ender_dragon_using_baguette_sword.description" : "Kill the Ender Dragon using a Baguette Sword",
   "advancements.baguette.kill_all_hostile_mobs_using_baguette_sword.description" : "Kill all hostile mobs using a Baguette Sword",
+  "advancements.baguette.craft_question_baguette.description": "Craft Question Baguette using TODO",
+  "advancements.baguette.get_question_baguette_question_wrong.description": "Get question baguette question wrong description",
+  "advancements.baguette.get_question_baguette_question_right.description": "Get question baguette question right description",
 
   "effect.baguette.silenced": "Silenced",
 
   "subtitles.baguette.baguettagon": "'Among us drip on noteblocks simple' by I_Am_The_Sheep",
   "subtitles.baguette.baguecah3dron": "'Among us drip on noteblocks complex' by I_Am_The_Sheep",
-
-  "baguette.config_broken.title": "Config file broken!",
-  "baguette.config_broken.text":"The configuration file for the Baguette mod couldn't be loaded correctly!\n\n\nPress 'Quit game' to quit the game.\n\nPress 'Remake the config file' to delete the config file and remake it with the default values.",
-  "baguette.config_broken.button.accept": "Remake the config file",
-  "baguette.config_broken.button.decline": "Quit game",
+  "subtitles.baguette.happy_birthday": "'Happy Birthday on noteblocks' by I_Am_The_Sheep",
 
   "baguette.credits": "§9§lManaging§r§9 - OffsetMonkey538\n\n§a§lIdeas§r§a - Dodecah3dron, I_Am_The_Sheep, OffsetMonkey538, WiredWeird\n\n§b§lTextures§r§b - Dodecah3dron, OffsetMonkey538\n\n§c§lMusic§r§c - I_Am_The_Sheep\n\n§d§lCoding§r§d - OffsetMonkey538"
 }

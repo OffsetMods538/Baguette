@@ -10,5 +10,11 @@
     "sounds": [
       "baguette:baguecah3dron"
     ]
-  }
+  },
+  "happy_birthday": {
+  "subtitle": "subtitles.baguette.happy_birthday",
+  "sounds": [
+    "baguette:happy_birthday"
+  ]
+}
 }

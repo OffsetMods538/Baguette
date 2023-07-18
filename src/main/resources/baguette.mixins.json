@@ -11,11 +11,10 @@
     "world.event.listener.VibrationListenerCallbackMixin"
   ],
   "client": [
-    "client.gui.screen.TitleScreenMixin",
-    "client.gui.screen.advancement.AdvancementWidgetMixin"
+    "client.gui.screen.advancement.AdvancementWidgetMixin",
+    "client.gui.screen.ChatScreenMixin"
   ],
   "server": [
-
   ],
   "injectors": {
     "defaultRequire": 1
