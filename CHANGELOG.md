@@ -1,9 +1,3 @@
 # Changelog
-## Added
-- none
-## Removed
-- none
-## Changed
-- Birthday Baguette now plays happy birthday when eaten
-## Fixed
-- Sheep spawned by Béguette now don't float.
+Update to 1.20.1  
+Use custom config library
