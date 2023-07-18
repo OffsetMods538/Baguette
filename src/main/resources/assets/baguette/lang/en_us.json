@@ -99,10 +99,5 @@
   "subtitles.baguette.baguecah3dron": "'Among us drip on noteblocks complex' by I_Am_The_Sheep",
   "subtitles.baguette.happy_birthday": "'Happy Birthday on noteblocks' by I_Am_The_Sheep",
 
-  "baguette.config_broken.title": "Config file broken!",
-  "baguette.config_broken.text":"The configuration file for the Baguette mod couldn't be loaded correctly!\n\n\nPress 'Quit game' to quit the game.\n\nPress 'Remake the config file' to delete the config file and remake it with the default values.",
-  "baguette.config_broken.button.accept": "Remake the config file",
-  "baguette.config_broken.button.decline": "Quit game",
-
   "baguette.credits": "§9§lManaging§r§9 - OffsetMonkey538\n\n§a§lIdeas§r§a - Dodecah3dron, I_Am_The_Sheep, OffsetMonkey538, WiredWeird\n\n§b§lTextures§r§b - Dodecah3dron, OffsetMonkey538\n\n§c§lMusic§r§c - I_Am_The_Sheep\n\n§d§lCoding§r§d - OffsetMonkey538"
 }
