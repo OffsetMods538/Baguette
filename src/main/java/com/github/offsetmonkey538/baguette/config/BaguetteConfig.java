@@ -136,7 +136,7 @@ public final class BaguetteConfig extends Config {
     @ConfigEntry
     public static class EndBaguette {
         @ConfigEntry("Default value: 10")
-        public static int teleportDistance = 20;
+        public static int teleportDistance = 10;
     }
 
 
