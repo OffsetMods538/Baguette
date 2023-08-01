@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(SkeletonEntity.class)
-public class SkeletonEntityMixin extends HostileEntity {
+public abstract class SkeletonEntityMixin extends HostileEntity {
 
     public SkeletonEntityMixin(EntityType<? extends SkeletonEntity> entityType, World world) {
         super(entityType, world);

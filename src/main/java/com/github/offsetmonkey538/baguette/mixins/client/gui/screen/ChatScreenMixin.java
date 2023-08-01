@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(ChatScreen.class)
-public class ChatScreenMixin {
+public abstract class ChatScreenMixin {
 
     @Inject(method = "sendMessage", at = @At("HEAD"), cancellable = true)
     public void sendChatMessage(String message, boolean addToHistory, CallbackInfoReturnable<Boolean> cir) {
