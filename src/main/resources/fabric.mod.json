@@ -15,9 +15,6 @@
   "icon": "assets/baguette/icon.png",
   "environment": "*",
   "entrypoints": {
-    "client": [
-      "com.github.offsetmonkey538.baguette.client.BaguetteClient"
-    ],
     "main": [
       "com.github.offsetmonkey538.baguette.BaguetteMain"
     ]
